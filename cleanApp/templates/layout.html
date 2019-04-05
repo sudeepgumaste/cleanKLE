@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+         <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        
+        <!-- Font awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        {% if title %}
+        <title>{{title}}</title>
+        {% else %}
+        <title>Clean KLE</title>
+        {% endif %}
+</head>
+<body>
+    <nav class="navbar navbar-dark navbar-fixed navbar-expand-md" style="background: #0a4c83">
+        <a href="{{ url_for('login') }}" class="navbar-brand"><i class="fab fa-envira"></i> Clean KLE</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#menu"><span class="navbar-toggler-icon"></span></button>
+        <div class="navbar-collapse collapse" id="menu">
+            <ul class="navbar-nav">
+                {% if title!='Login' %}
+                    <li class="nav-item">
+                        <a href="{{ url_for('login') }}" class="nav-link">Login</a>
+                    </li>
+                {% endif %}
+
+                {% if title!='How it works?' %}
+                    <li class="nav-item">
+                        <a href="{{ url_for('works') }}" class="nav-link">How It works</a>
+                    </li>
+                {% endif %}
+
+                {% if title!='What is it for?' %}
+                    <li class="nav-item">
+                        <a href="{{ url_for('what') }}" class="nav-link">What's it for</a>
+                    </li>
+                {% endif %}
+
+                {% if title!='About Us' %}
+                    <li class="nav-item">
+                        <a href="{{ url_for('about') }}" class="nav-link">About Us</a>
+                    </li>
+                {% endif %}
+            </ul>
+        </div>
+    </nav>
+    {% block content %}{% endblock content %}
+</body>
+</html>
