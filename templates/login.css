@@ -1,0 +1,39 @@
+html{
+	height: 100%;
+}
+body{
+	background: url("../static/Collegedark.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: none;
+	font-family: 'Roboto Mono', monospace;
+}
+.jumbotron{
+	margin-top: 10%;
+	margin-left: 37%;
+	margin-right: 37%;
+	padding-top: 20px; 
+	background-color: rgba(0,0,200,0.2);
+	color: white;
+		font-family: 'Roboto Mono', monospace;
+
+}
+hr{
+	border-color: white;
+}
+
+.iconspace{
+	margin-left: 0px;
+}
+
+@media(max-width: 568px){
+	.jumbotron{
+
+	margin-top: 25%;
+	margin-left: 01%;
+	margin-right: 01%;
+	padding-top: 10px; 
+
+}
+
+}
