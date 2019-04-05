@@ -7,6 +7,10 @@ from flask import url_for
 def login():
     return render_template("login.html",title="Login")
 
+@app.route("/register")
+def register():
+    return render_template("register.html",title="Register")
+
 @app.route("/works")
 def works():
     return render_template("works.html",title="How it works?")

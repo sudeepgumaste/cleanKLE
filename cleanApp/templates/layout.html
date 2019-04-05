@@ -28,13 +28,7 @@
         <a href="{{ url_for('login') }}" class="navbar-brand"><i class="fab fa-envira"></i> Clean KLE</a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#menu"><span class="navbar-toggler-icon"></span></button>
         <div class="navbar-collapse collapse" id="menu">
-            <ul class="navbar-nav">
-                {% if title!='Login' %}
-                    <li class="nav-item">
-                        <a href="{{ url_for('login') }}" class="nav-link">Login</a>
-                    </li>
-                {% endif %}
-
+            <ul class="navbar-nav navbar-right">
                 {% if title!='How it works?' %}
                     <li class="nav-item">
                         <a href="{{ url_for('works') }}" class="nav-link">How It works</a>
@@ -52,6 +46,20 @@
                         <a href="{{ url_for('about') }}" class="nav-link">About Us</a>
                     </li>
                 {% endif %}
+
+                <div class="navbar-right">
+                    {% if title!='Login' %}
+                        <li class="nav-item">
+                            <a href="{{ url_for('login') }}" class="nav-link">Login</a>
+                        </li>
+                    {% endif %}
+    
+                    {% if title!='Register' %}
+                        <li class="nav-item">
+                            <a href="{{ url_for('register') }}" class="nav-link">Register</a>
+                        </li>
+                    {% endif %}
+                </div>
             </ul>
         </div>
     </nav>
