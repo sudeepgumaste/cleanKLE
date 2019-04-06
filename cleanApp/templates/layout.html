@@ -24,43 +24,43 @@
         {% endif %}
 </head>
 <body>
-    <nav class="navbar navbar-dark navbar-fixed navbar-expand-md" style="background: #0a4c83">
-        <a href="{{ url_for('login') }}" class="navbar-brand"><i class="fab fa-envira"></i> Clean KLE</a>
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#menu"><span class="navbar-toggler-icon"></span></button>
-        <div class="navbar-collapse collapse" id="menu">
-            <ul class="navbar-nav navbar-right">
-                {% if title!='How it works?' %}
-                    <li class="nav-item">
-                        <a href="{{ url_for('works') }}" class="nav-link">How It works</a>
-                    </li>
-                {% endif %}
+    <nav class="navbar navbar-dark navbar-fixed navbar-expand-md" style="background: #303952"><!--0a4c83-->
+        <div class="container">
+            <a href="{{ url_for('login') }}" class="navbar-brand"><h3><i class="fab fa-envira"></i> Clean KLE</h3></a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#menu"><span class="navbar-toggler-icon"></span></button>
+            <div class="navbar-collapse collapse" id="menu">
+                <ul class="navbar-nav navbar-right">
+                    {% if title!='How it works?' %}
+                        <li class="nav-item">
+                            <a href="{{ url_for('works') }}" class="nav-link">How It works</a>
+                        </li>
+                    {% endif %}
 
-                {% if title!='What is it for?' %}
-                    <li class="nav-item">
-                        <a href="{{ url_for('what') }}" class="nav-link">What's it for</a>
-                    </li>
-                {% endif %}
+                    {% if title!='What is it for?' %}
+                        <li class="nav-item">
+                            <a href="{{ url_for('what') }}" class="nav-link">What's it for</a>
+                        </li>
+                    {% endif %}
 
-                {% if title!='About Us' %}
-                    <li class="nav-item">
-                        <a href="{{ url_for('about') }}" class="nav-link">About Us</a>
-                    </li>
-                {% endif %}
-
-                <div class="navbar-right">
+                    {% if title!='About Us' %}
+                        <li class="nav-item">
+                            <a href="{{ url_for('about') }}" class="nav-link">About Us</a>
+                        </li>
+                    {% endif %}
+                    
                     {% if title!='Login' %}
                         <li class="nav-item">
                             <a href="{{ url_for('login') }}" class="nav-link">Login</a>
                         </li>
                     {% endif %}
-    
+        
                     {% if title!='Register' %}
                         <li class="nav-item">
                             <a href="{{ url_for('register') }}" class="nav-link">Register</a>
                         </li>
                     {% endif %}
-                </div>
-            </ul>
+                </ul>
+            </div>
         </div>
     </nav>
     {% block content %}{% endblock content %}

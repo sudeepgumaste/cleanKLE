@@ -1,11 +1,13 @@
 from cleanApp import app
 from flask import render_template
 from flask import url_for
+from cleanApp.forms import loginForm
 
 @app.route("/")
-@app.route("/login")
+@app.route("/login", methods = ['GET', 'POST'])
 def login():
-    return render_template("login.html",title="Login")
+    form = loginForm()
+    return render_template("login.html",title="Login", form=form)
 
 @app.route("/register")
 def register():
