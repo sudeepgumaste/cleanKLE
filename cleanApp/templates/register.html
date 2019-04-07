@@ -1,4 +1,87 @@
 {% extends "layout.html" %}
 {% block content %}
-    <h1>Register</h1>
+
+    <div class="jumbotron" style="padding-top: 20px;padding-bottom: 20px;	background-color: rgba(255,255,255,0.2);">
+        <h2 style="text-align:center;"> <i class="fas fa-user"></i> Sign Up</h2>
+        <hr> 
+        <form>
+        <div style="text-align:center;">
+        <div class="form-group">
+            {{ form.username.label(class="form-control-label  h6") }}
+            {% if form.username.errors %}
+                {{ form.username(class = "form-control is-invalid      trans-input", placeholder="Choose a username") }}
+                {% for error in form.username.errors %}
+                    <span>{{ error }}</span>
+                {% endfor %}
+            {% else %}
+                {{ form.username(class = "form-control      trans-input", placeholder="Choose a username") }}
+            {% endif %}
+        </div>
+        <div class="form-group">
+            {{ form.password.label(class="form-control-label  h6") }}
+            {% if form.password.errors %}
+                {{ form.password(class="form-control is-invalid    trans-input", placeholder="Choose a password") }}
+                <div class="invalid-feedback">
+                    {% for error in form.password.errors %}
+                        <span>{{ error }}</span>
+                    {% endfor %}
+                </div>
+            {% else %}
+                {{ form.password(class="form-control    trans-input", placeholder="Choose a password") }}
+            {% endif %}
+        </div>
+        <div class="form-group">
+            {{ form.confirmPassword.label(class="form-control-label  h6") }}
+            {% if form.confirmPassword.errors %}
+                {{ form.confirmPassword(class="form-control   is-invalid    trans-input", placeholder="Confirm the password") }}
+                <div class="invalid-feedback">
+                    {% for error in form.confirmPassword.errors %}
+                        <span>{{ error }}</span>
+                    {% endfor %}
+                </div>
+            {% else %}
+                {{ form.confirmPassword(class="form-control    trans-input", placeholder="Confirm the password") }}
+            {% endif %}
+        </div>
+        <div class="form-group">
+            {{ form.phone.label(class="form-control-label  h6") }}
+            {% if form.phone.errors %}
+                {{ form.phone(class="form-control is-invalid trans-input", placeholder="Enter your phone number") }}
+                <div class="invalid-feedback">
+                    {% for error in form.phone.errors %}
+                        <span>{{ error }}</span>
+                    {% endfor %}
+                </div>
+            {% else %}
+                {{ form.phone(class="form-control trans-input", placeholder="Enter your phone number") }}
+            {% endif %}
+        </div>
+        <div class="form-group">
+            {{ form.branch.label(class="form-control-label  h6") }}
+            {% if form.branch.errors %}
+                {{ form.branch(class="form-control is-invalid trans-input") }}
+                <div class="invalid-feedback">
+                    {% for error in form.branch.errors %}
+                        <span>{{ error }}</span>
+                    {% endfor %}
+                </div>
+            {% else %}
+                {{ form.branch(class="form-control trans-input") }}
+            {% endif %}
+        </div>
+        <div class="form-group">
+            {{ form.sem.label(class="form-control-label h6") }}
+            {% if form.sem.errors %}
+                {{ form.sem(class="form-control is-invalid trans-input", placeholder="Enter your current semester") }}
+                <div class="invalid-feedback">
+                    {% for error in form.sem.errors %}
+                        <span>{{ error }}</span>
+                    {% endfor %}
+                </div>
+            {% else %}
+                {{ form.sem(class="form-control trans-input", placeholder="Enter your current semester") }}
+            {% endif %}
+        </div>
+        </form>
+    </div>
 {% endblock content %}
