@@ -42,8 +42,20 @@ hr{
 	.jumbotron{
 
 	margin-top: 25%;
-	margin-left: 01%;
-	margin-right: 01%;
+	margin-left: 20%;
+	margin-right: 20%;
+	padding-top: 10px; 
+
+}
+
+}
+
+@media(max-width: 568px){
+	.jumbotron{
+
+	margin-top: 25%;
+	margin-left: 7%;
+	margin-right: 7%;
 	padding-top: 10px; 
 
 }
