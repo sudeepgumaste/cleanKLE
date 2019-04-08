@@ -2,38 +2,37 @@
 {% block content %}
 
     <div class="jumbotron" style="padding-top: 20px;padding-bottom: 20px;	background-color: rgba(255,255,255,0.2);">
-        <h2 style="text-align:center;"> <i class="fas fa-user"></i> Login</h2>
-        <hr> 
+        <h3 style="text-align:center;" class="mb-3"><i class="fas fa-user"></i></i> Login</h2>
         <form>
         <div style="text-align:center;">
-        <div class="form-group">
-            {{ form.usn.label(class="form-control-label h4") }}
-            {% if form.usn.errors %}
-                {{ form.usn(class = "form-control is-invalid form-control-lg mb-3 trans-input", placeholder="Enter your USN") }}
-                {% for error in form.usn.errors %}
-                    <span>{{ error }}</span>
-                {% endfor %}
-            {% else %}
-                {{ form.usn(class = "form-control form-control-lg mb-3 trans-input", placeholder="Enter your USN") }}
-            {% endif %}
-        </div>
-        <div class="form-group">
-            {{ form.password.label(class="form-control-label h4") }}
-            {% if form.password.errors %}
-                {{ form.password(class="form-control form-control-lg is-invalid mb-5 trans-input", placeholder="Enter the password") }}
-                <div class="invalid-feedback">
-                    {% for error in form.password.errors %}
+            <div class="form-group">
+                {{ form.usn.label(class="form-control-label h5") }}
+                {% if form.usn.errors %}
+                    {{ form.usn(class = "form-control is-invalid form-control-lg mb-3 trans-input", placeholder="Enter your USN") }}
+                    {% for error in form.usn.errors %}
                         <span>{{ error }}</span>
                     {% endfor %}
-                </div>
-            {% else %}
-                {{ form.password(class="form-control form-control-lg mb-5 trans-input", placeholder="Enter the password") }}
-            {% endif %}
-        </div>
-        <div class="form-check">
-        </div>
-        <button type="input" class="btn btn-block btn-lg btn-primary" style="font-weight: bold; background: #303952; border: #303952">Login</button><br><br>
-        <div style="font-size: 13px;"><label>Dont have an account? <a href="{{url_for('register')}}"><span style="font-size: 1rem; color: aqua">Register</span></a></label></div>
+                {% else %}
+                    {{ form.usn(class = "form-control form-control-lg mb-3 trans-input", placeholder="Enter your USN") }}
+                {% endif %}
+            </div>
+            <div class="form-group">
+                {{ form.password.label(class="form-control-label h5") }}
+                {% if form.password.errors %}
+                    {{ form.password(class="form-control form-control-lg is-invalid mb-5 trans-input", placeholder="Enter the password") }}
+                    <div class="invalid-feedback">
+                        {% for error in form.password.errors %}
+                            <span>{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    {{ form.password(class="form-control form-control-lg mb-5 trans-input", placeholder="Enter the password") }}
+                {% endif %}
+            </div>
+            <div class="form-check">
+            </div>
+            {{ form.login(class="btn btn-block btn-lg btn-primary mb-3", style="font-weight: bold; background: #303952; border: #303952") }}
+            <div style="font-size: 13px;"><label>Don't have an account? <a href="{{url_for('register')}}"><span style="font-size: 1rem; color: aqua">Register</span></a></label></div>
         </div>
         </form>
     </div>

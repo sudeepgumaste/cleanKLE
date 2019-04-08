@@ -10,6 +10,13 @@ class loginForm(FlaskForm):
 
     login = SubmitField ('Login')
 
+class adminLoginForm(FlaskForm):
+    username = StringField('Username', validators=[DataRequired()])
+
+    password = PasswordField ('Password', validators=[DataRequired()])
+
+    login = SubmitField ('Login')
+
 
 class registerForm(FlaskForm):
     username = StringField('User Name', validators=[DataRequired(), Length(min=5, max=10)])
@@ -23,7 +30,7 @@ class registerForm(FlaskForm):
                                          ('EC', 'E and C'), ('EE', 'E and E'), ('AC', 'Architecture')
                                          , ('AR', 'A and R')] )
     
-    sem = SelectField('Sem', choices = [('1','1'),('2','2'),('3','3'),('4','4'),('5','5'),('6','6'),('7','7'),('8','8')])
+    sem = SelectField('Semister', choices = [('1','1'),('2','2'),('3','3'),('4','4'),('5','5'),('6','6'),('7','7'),('8','8')])
     
     phone = StringField('Phone no.', validators=[DataRequired(), Length(min=5, max=10)])
 
