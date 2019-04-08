@@ -1,0 +1,51 @@
+html{
+	height: 100%;
+}
+body{
+	background: url("../static/CollegeDark.jpg");
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: none;
+}
+
+.input-group-text{
+	border: 0px solid rgba(0, 0, 0, 0.651);
+    border-radius: 1.5rem;
+	background-color: rgba(0, 0, 0, 0.651);
+}
+
+.trans-input{
+    border: rgba(0, 0, 0, 0.548);
+    border-radius: 1.5rem;
+	background-color: rgba(0, 0, 0, 0.548);
+}
+
+.jumbotron{
+	margin-top: 10%;
+	margin-left: 37%;
+	margin-right: 37%;
+	padding-top: 20px; 
+	background-color: rgba(0,0,200,0.8);
+	color: white;
+
+}
+hr{
+	border-color: white;
+}
+
+.iconspace{
+	margin-left: 0px;
+}
+
+@media(max-width: 768px){
+	.jumbotron{
+
+	margin-top: 25%;
+	margin-left: 01%;
+	margin-right: 01%;
+	padding-top: 10px; 
+
+}
+
+}
