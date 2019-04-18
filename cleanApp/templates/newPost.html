@@ -1,0 +1,33 @@
+{% extends "newLay.html" %}
+{% block desc %}
+    <div class="jumbotron bg-light" style="padding: 5em">
+        <p class="h1 text-center">Post</p>
+        <hr>
+        <div class="input-group mb-4">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Short Description</span>
+            </div>
+            {% if form.shortDesc.errors %}
+            {{ form.shortDesc(class = "form-control is-invalid", placeholder="Enter a short description") }}
+            {% for error in form.shortDesc.errors %}
+            <span>{{ error }}</span>
+            {% endfor %}
+            {% else %}
+            {{ form.shortDesc(class = "form-control", placeholder="Enter a short description") }}
+            {% endif %}
+        </div>
+        <div class="input-group mb-4">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Location / Landmark in vicinity</span>
+            </div>
+            {% if form.location.errors %}
+            {{ form.location(class = "form-control is-invalid", placeholder="Enter a short description") }}
+            {% for error in form.location.errors %}
+            <span>{{ error }}</span>
+            {% endfor %}
+            {% else %}
+            {{ form.location(class = "form-control", placeholder="Enter a short description") }}
+            {% endif %}
+        </div>
+    </div>
+{% endblock desc %}

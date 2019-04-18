@@ -3,9 +3,10 @@
 
     <div class="jumbotron" style="padding-top: 20px;padding-bottom: 20px;	background-color: rgba(255,255,255,0.2);">
         <h3 style="text-align:center;" class="mb-3"><i class="fas fa-user"></i></i> Login</h2>
-        <form>
+        <form method ="POST" action = "">
         <div style="text-align:center;">
             <div class="form-group">
+            {{ form.hidden_tag() }}                
                 {{ form.usn.label(class="form-control-label h5") }}
                 {% if form.usn.errors %}
                     {{ form.usn(class = "form-control is-invalid form-control-lg mb-3 trans-input", placeholder="Enter your USN") }}

@@ -52,22 +52,36 @@
                             <a href="{{ url_for('about') }}" class="nav-link">About Us</a>
                         </li>
                     {% endif %}
-                    
-                    {% if title!='Login' %}
-                        <li class="nav-item">
-                            <a href="{{ url_for('login') }}" class="nav-link">Login</a>
-                        </li>
-                    {% endif %}
         
-                    {% if title!='Register' %}
+                    {% if title!='Register' and title!='Posts' %}
                         <li class="nav-item">
                             <a href="{{ url_for('register') }}" class="nav-link">Register</a>
+                        </li>
+                    {% endif %}
+
+                    {% if title=='Posts' %}
+                        <li class="nav-item">
+                            <a href="{{ url_for('logout') }}" class="nav-link">Logout</a>
+                        </li>
+                    {% endif %}
+                    {% if title!='Login' and title!='Posts' %}
+                        <li class="nav-item">
+                            <a href="{{ url_for('login') }}" class="nav-link">Login</a>
                         </li>
                     {% endif %}
                 </ul>
             </div>
         </div>
     </nav>
+    {% with messages=get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for category,message in messages %}
+                <div class="alert alert-{{ category }}">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
     {% block content %}{% endblock content %}
 </body>
 </html>
