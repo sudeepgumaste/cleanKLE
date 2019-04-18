@@ -8,14 +8,14 @@ from cleanApp.models import User
 @app.route("/")
 @app.route("/login", methods = ['GET', 'POST'])
 def login():
+    if current_user.is_authenticated:
+        return redirect(url_for('posts'))
     form = loginForm()
     if form.validate_on_submit():
-        print (form.usn.data)
-        print (form.password.data)
-        usr = User.query.filter_by(usn=form.usn.data).first()
-        if usr and form.password.data == usr.password:
-            login_user(usr)
-            flash(f'logged in as{usr.usn}','success')
+        user = User.query.filter_by(usn=form.usn.data).first()
+        if user and bcrypt.check_password_hash(user.password, form.password.data):
+            login_user(user)
+            flash(f'logged in as {user.usn}','success')
             return redirect(url_for('posts')) 
         else:
             flash('Check your USN and password and login again!', 'danger')
@@ -36,8 +36,14 @@ def admin():
 def register():
     form = registerForm()
     if form.validate_on_submit():
-        flash(f'Account created for {form.username.data}. Please login', 'success text-center')
-        return redirect(url_for('login'))
+        if form.validate_on_submit():
+            hasshed_passwd = bcrypt.generate_password_hash(form.password.data).decode('utf-8')
+            user = User(usn = form.usn.data.lower(), username = form.username.data, email = form.email.data.lower(), password = hasshed_passwd,
+                        branch = form.branch.data, sem = form.sem.data, phone = form.phone.data)
+            db.session.add(user)
+            db.session.commit()
+            flash(f'Account created for {form.username.data}! You can login now!', 'success')
+            return redirect(url_for('login'))
     return render_template("register.html",title="Register", form=form)
 
 @app.route("/works")

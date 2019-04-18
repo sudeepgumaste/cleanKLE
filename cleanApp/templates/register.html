@@ -3,19 +3,34 @@
     <div class="jumbotron" style="padding-top: 20px;padding-bottom: 20px;	background-color: rgba(255,255,255,0.2);">
         <h3 style="text-align:center;" class="mb-3"><i class="fas fa-user-plus"></i> Sign Up</h2>
         <form method="POST">
+            {{ form.hidden_tag() }}
         <div style="text-align:center;">
         <div class="form-group">
-            {{ form.hidden_tag() }}
             {{ form.username.label(class="form-control-label  h6") }}
             {% if form.username.errors %}
                 {{ form.username(class = "form-control is-invalid trans-input", placeholder="Choose a username") }}
-                {% for error in form.username.errors %}
-                    <span>{{ error }}</span>
-                {% endfor %}
+                <div class="bg-danger rounded">
+                    {% for error in form.username.errors %}
+                        <span>{{ error }}</span>
+                    {% endfor %}
+                </div>
             {% else %}
                 {{ form.username(class = "form-control trans-input", placeholder="Choose a username") }}
             {% endif %}
         </div>
+        <div class="form-group">
+                {{ form.email.label(class="form-control-label  h6") }}
+                {% if form.email.errors %}
+                    {{ form.email(class = "form-control is-invalid trans-input", placeholder="Enter your email") }}
+                    <div class="bg-danger rounded">
+                        {% for error in form.email.errors %}
+                            <span>{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    {{ form.email(class = "form-control trans-input", placeholder="Enter your email") }}
+                {% endif %}
+            </div>
         <div class="form-group">
             {{ form.password.label(class="form-control-label  h6") }}
             {% if form.password.errors %}
@@ -52,7 +67,7 @@
                     {% endfor %}
                 </div>
             {% else %}
-                {{ form.usn(class="form-control trans-input", placeholder="Confirm the password") }}
+                {{ form.usn(class="form-control trans-input", placeholder="Enter your usn") }}
             {% endif %}
         </div>
         <div class="form-group">

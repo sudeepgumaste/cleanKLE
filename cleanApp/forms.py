@@ -22,6 +22,8 @@ class adminLoginForm(FlaskForm):
 class registerForm(FlaskForm):
     username = StringField('User Name', validators=[DataRequired(), Length(min=3, max=20)])
 
+    email = StringField('Email', validators=[DataRequired(), Email()])
+
     password = PasswordField('Password', validators = [DataRequired()])
     confirmPassword = PasswordField('Confirm Password', validators = [DataRequired(),EqualTo('password')])
 
@@ -29,10 +31,9 @@ class registerForm(FlaskForm):
 
     branch  = SelectField('Branch', choices = [('CS','Computer Sci'), ('ME', 'Mechanical'), ('CV','Civil'),
                                          ('EC', 'E and C'), ('EE', 'E and E'), ('AC', 'Architecture')
-                                         , ('AR', 'A and R')], validators = [DataRequired()])
+                                         , ('AR', 'A and R')])
     
-    sem = SelectField('Semester', choices = [(1,'1'),(2,'2'),(3,'3'),(4,'4'),(5,'5'),(6,'6'),(7,'7'),(8,'8')],
-                        validators = [DataRequired()])
+    sem = SelectField('Semester', choices = [('1','1'),('2','2'),('3','3'),('4','4'),('5','5'),('6','6'),('7','7'),('8','8')])
 
     phone = StringField('Phone no.', validators=[DataRequired(), Length(min=10, max=10)])
 
