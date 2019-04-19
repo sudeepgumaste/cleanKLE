@@ -31,3 +31,7 @@ def about():
 @app.route("/what")
 def what():
     return render_template("what.html", title="What is it for?")
+
+@app.route("/admin/panel")
+def panel():
+    return render_template("admin-panel.html", title="Panel")
