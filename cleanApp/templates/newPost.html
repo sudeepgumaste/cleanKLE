@@ -3,31 +3,60 @@
     <div class="jumbotron bg-light" style="padding: 5em">
         <p class="h1 text-center">Post</p>
         <hr>
-        <div class="input-group mb-4">
-            <div class="input-group-prepend">
-                <span class="input-group-text">Short Description</span>
+        <form action="" method="POST" enctype="multipart/form-data">
+            <div class="input-group mb-4">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Title</span>
+                </div>
+                {% if form.shortDesc.errors %}
+                    {{ form.shortDesc(class = "form-control is-invalid", placeholder="Enter a short description") }}
+                        {% for error in form.shortDesc.errors %}
+                            <span>{{ error }}</span>
+                        {% endfor %}
+                {% else %}
+                {{ form.shortDesc(class = "form-control", placeholder="Enter a short description") }}
+                {% endif %}
             </div>
-            {% if form.shortDesc.errors %}
-            {{ form.shortDesc(class = "form-control is-invalid", placeholder="Enter a short description") }}
-            {% for error in form.shortDesc.errors %}
-            <span>{{ error }}</span>
-            {% endfor %}
-            {% else %}
-            {{ form.shortDesc(class = "form-control", placeholder="Enter a short description") }}
-            {% endif %}
-        </div>
-        <div class="input-group mb-4">
-            <div class="input-group-prepend">
-                <span class="input-group-text">Location / Landmark in vicinity</span>
+            <div class="input-group mb-4">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Location / Landmark in vicinity</span>
+                </div>
+                {% if form.location.errors %}
+                {{ form.location(class = "form-control is-invalid", placeholder="Enter a short description") }}
+                    {% for error in form.location.errors %}
+                    <span>{{ error }}</span>
+                    {% endfor %}
+                {% else %}
+                {{ form.location(class = "form-control", placeholder="Enter a short description") }}
+                {% endif %}
             </div>
-            {% if form.location.errors %}
-            {{ form.location(class = "form-control is-invalid", placeholder="Enter a short description") }}
-            {% for error in form.location.errors %}
-            <span>{{ error }}</span>
-            {% endfor %}
-            {% else %}
-            {{ form.location(class = "form-control", placeholder="Enter a short description") }}
-            {% endif %}
+            {{ form.degree.label(class="h4 text-muted") }}
+            <div class="row">
+                {{ form.degree(style="list-style-type : none;") }}
+            </div>
+            <div class="form-group mb-4">
+                {{ form.picture.label(class="h4 text-muted") }}
+                {{ form.picture(class="form-control-file  mb-4") }}
+                {% if form.picture.errors %}
+                    {% for error in form.picture.errors %}
+                        <span class="test-danger">{{ error }}</span>
+                    {% endfor %}
+                {% endif %}
+            </div>
+            <div class="form-group">
+                {{ form.briefDesc.label(class="form-control-label h5") }}
+                {% if form.briefDesc.errors %}
+                    {{ form.briefDesc(class="form-control form-control-lg is-invalid mb-5 trans-input", placeholder="Enter the briefDesc") }}
+                    <div class="invalid-feedback">
+                        {% for error in form.briefDesc.errors %}
+                            <span>{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    {{ form.briefDesc(class="form-control form-control-lg mb-5 trans-input", placeholder="Enter a briefDesc") }}
+                {% endif %}
+            </div>
+            {{ form.submit(class="btn btn-block btn-lg btn-primary mb-3", style="font-weight: bold; background: #303952; border: #303952") }}
         </div>
-    </div>
+        </form>
 {% endblock desc %}

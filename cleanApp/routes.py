@@ -3,7 +3,9 @@ from flask import render_template
 from flask import url_for, flash, redirect
 from cleanApp.forms import loginForm,registerForm,adminLoginForm, postForm
 from flask_login import login_user,current_user, logout_user, login_required
-from cleanApp.models import User
+from cleanApp.models import User,Post
+from PIL import Image
+import os,secrets
 
 @app.route("/")
 @app.route("/login", methods = ['GET', 'POST'])
@@ -31,6 +33,10 @@ def logout():
 def admin():
     form = adminLoginForm()
     return render_template("admin.html",title="Admin", form=form)
+
+@app.route("/admin/dept")
+def department():
+    dept=['Computer Sci','Mechanical','Civil','E and C','E and E','Architecture','A and R','Outdoors']
 
 @app.route("/admin/panel")
 def panel():
@@ -67,7 +73,32 @@ def what():
 def posts():
     return render_template("posts.html", title="Posts")
 
-@app.route("/createpost")
+#function for randomizing image file names and resizing
+def save_picture(form_picture):
+    random_hex = secrets.token_hex(8)
+    _,f_ext = os.path.splitext(form_picture.filename)
+    picture_fn = random_hex + f_ext
+    picture_path = os.path.join(app.root_path, 'static/posts', picture_fn)
+
+    output_size = (500,500)
+    i = Image.open(form_picture)
+    i.thumbnail(output_size)
+
+    i.save(picture_path)
+    return picture_fn
+
+@app.route("/posts/create", methods = ['GET', 'POST'])
+@login_required
 def newPost():
     form = postForm()
+    if form.validate_on_submit:
+        if form.picture.data:
+            picture_file = save_picture(form.picture.data)
+            post = Post(title=form.shortDesc.data, content=form.briefDesc.data, location=form.location.data,
+                    severity=form.degree.data, user_id=current_user.id, image_file=picture_file )
+            db.session.add(post)
+            db.session.commit()
+            return redirect(url_for('posts'))
+        else:
+            pass
     return render_template("newPost.html", title="Posts", form=form)
