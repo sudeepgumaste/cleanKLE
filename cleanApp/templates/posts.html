@@ -1,5 +1,19 @@
 {% extends "newLay.html" %}
 {% block desc %}
+    {% for post in posts %}
+        <div class="jumbotron bg-light">
+            <div class = "d-flex flex-column flex-md-row">
+                <div class="jumbotron jumbotron-fluid p-0 mr-md-4">
+                    <img src="../static/posts/{{post.image_file}}" alt="" class="img-rounded rounded" width="450" height="450">
+                </div>
+                <div id="description">
+                    <h1>{{post.title}}</h1>
+                    <hr>
+                    <p>{{post.content}}</p>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
     <div class="jumbotron bg-light">
         <div class = "d-flex flex-column flex-md-row">
             <div class="jumbotron jumbotron-fluid p-0 mr-md-4">

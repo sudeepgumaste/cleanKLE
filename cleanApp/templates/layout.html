@@ -52,19 +52,38 @@
                             <a href="{{ url_for('about') }}" class="nav-link">About Us</a>
                         </li>
                     {% endif %}
-        
-                    {% if title!='Register' and title!='Posts' %}
+
+                    {% if title=='How it works?' or title=='What is it for?' or title=='About Us' %}
+                        <li class="nav-item">
+                            <a href="{{ url_for('login') }}" class="nav-link">Login</a>
+                        </li>
                         <li class="nav-item">
                             <a href="{{ url_for('register') }}" class="nav-link">Register</a>
                         </li>
                     {% endif %}
 
-                    {% if title=='Posts' %}
+                    {% if title=='Login' or current_user.is_authenticate==false %}
+                        <li class="nav-item">
+                            <a href="{{ url_for('register') }}" class="nav-link">Register</a>
+                        </li>
+                    {% endif %}
+
+                    {% if current_user.is_authenticated %}
+                        {% if title!='New Post' %}
+                            <li class="nav-item">
+                                <a href="{{ url_for('newPost') }}" class="nav-link">New Post</a>
+                            </li>
+                        {% else %}
+                            <li class="nav-item">
+                                <a href="{{ url_for('newPost') }}" class="nav-link">New Post</a>
+                            </li>
+                        {% endif %}
+
                         <li class="nav-item">
                             <a href="{{ url_for('logout') }}" class="nav-link">Logout</a>
                         </li>
                     {% endif %}
-                    {% if title!='Login' and title!='Posts' %}
+                    {% if current_user.is_authenticated==false and title=='Register'%}
                         <li class="nav-item">
                             <a href="{{ url_for('login') }}" class="nav-link">Login</a>
                         </li>
@@ -76,8 +95,10 @@
     {% with messages=get_flashed_messages(with_categories=true) %}
         {% if messages %}
             {% for category,message in messages %}
-                <div class="alert alert-{{ category }} text-center">
-                    {{ message }}
+                <div class="container">
+                    <div class="alert alert-{{ category }} text-center">
+                        {{ message }}
+                    </div>
                 </div>
             {% endfor %}
         {% endif %}

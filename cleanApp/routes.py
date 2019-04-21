@@ -5,7 +5,7 @@ from cleanApp.forms import loginForm,registerForm,adminLoginForm, postForm
 from flask_login import login_user,current_user, logout_user, login_required
 from cleanApp.models import User,Post
 from PIL import Image
-import os,secrets
+import os,secrets,cv2
 
 @app.route("/")
 @app.route("/login", methods = ['GET', 'POST'])
@@ -16,7 +16,7 @@ def login():
     if form.validate_on_submit():
         user = User.query.filter_by(usn=form.usn.data).first()
         if user and bcrypt.check_password_hash(user.password, form.password.data):
-            login_user(user)
+            login_user(user,remember=True)
             flash(f'logged in as {user.usn}','success')
             return redirect(url_for('posts')) 
         else:
@@ -44,6 +44,8 @@ def panel():
 
 @app.route("/register", methods = ['GET', 'POST'])
 def register():
+    if current_user.is_authenticated:
+        return redirect(url_for('posts'))
     form = registerForm()
     if form.validate_on_submit():
         if form.validate_on_submit():
@@ -71,7 +73,8 @@ def what():
 @app.route("/posts")
 @login_required
 def posts():
-    return render_template("posts.html", title="Posts")
+    posts=loadPosts()
+    return render_template("posts.html", title="Posts", posts=posts)
 
 #function for randomizing image file names and resizing
 def save_picture(form_picture):
@@ -87,13 +90,34 @@ def save_picture(form_picture):
     i.save(picture_path)
     return picture_fn
 
+def resize(image_file):
+    random_hex = secrets.token_hex(8)
+    _,f_ext = os.path.splitext(image_file.filename)
+    picture_fn = random_hex + f_ext
+    picture_path = os.path.join(app.root_path, 'static/posts', picture_fn)
+
+    img=Image.open(image_file)
+    w,h=img.size
+    if w>h:
+        l=(w-h)//2
+        left,top,right,bottom=l,0,w-l,h
+    elif h>w:
+        l=(h-w)//2
+        left,top,right,bottom=0,l,w,h-l
+    else:
+        left,top,right,bottom=0,0,w,h
+    img = img.crop((left,top,right,bottom))
+    img.thumbnail((500,500))
+    img.save(picture_path)
+    return picture_fn
+
 @app.route("/posts/create", methods = ['GET', 'POST'])
 @login_required
 def newPost():
     form = postForm()
     if form.validate_on_submit:
         if form.picture.data:
-            picture_file = save_picture(form.picture.data)
+            picture_file = resize(form.picture.data)
             post = Post(title=form.shortDesc.data, content=form.briefDesc.data, location=form.location.data,
                     severity=form.degree.data, user_id=current_user.id, image_file=picture_file )
             db.session.add(post)
@@ -101,4 +125,9 @@ def newPost():
             return redirect(url_for('posts'))
         else:
             pass
-    return render_template("newPost.html", title="Posts", form=form)
+    return render_template("newPost.html", title="New Post", form=form)
+
+
+def loadPosts():
+    posts=Post.query.all()
+    return posts
