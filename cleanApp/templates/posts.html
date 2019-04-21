@@ -3,12 +3,12 @@
     {% for post in posts %}
         <div class="jumbotron bg-light pb-0">
             <div class="row">
-                <div class="col">
-                    <div class="jumbotron jumbotron-fluid p-0 mr-md-4">
-                        <img src="../static/posts/{{post.image_file}}" alt="" class="img-rounded rounded">
+                <div class="col-md-6 text-center">
+                    <div class="jumbotron jumbotron-fluid p-0">
+                        <img src="../static/posts/{{post.image_file}}" alt="" class="img-rounded rounded " style="max-width: 100%; max-height:100% ;">
                     </div>
-                    <div class="col severity" style="margin:10px;">
-                        <h3>
+                    <div>
+                        <h3 class="text-muted">
                         Severity: 
                         {% if post.severity=='1' %}
                             <i class="fas fa-frown-open text-info h2"></i>
@@ -24,7 +24,7 @@
                         </h3>
                     </div>
                 </div>
-                <div class="col text-muted">
+                <div class="col-md-6 text-muted">
                     <div id="description">
                         <h1>{{post.title}}</h1>
                         <hr>

@@ -14,7 +14,7 @@ def login():
         return redirect(url_for('posts'))
     form = loginForm()
     if form.validate_on_submit():
-        user = User.query.filter_by(usn=form.usn.data).first()
+        user = User.query.filter_by(usn=form.usn.data.lower()).first()
         if user and bcrypt.check_password_hash(user.password, form.password.data):
             login_user(user,remember=True)
             flash(f'logged in as {user.usn}','success')
@@ -32,15 +32,33 @@ def logout():
 @app.route("/admin", methods = ['GET', 'POST'])
 def admin():
     form = adminLoginForm()
+    if form.validate_on_submit():
+        user = User.query.filter_by(username=form.username.data).first()
+        if user and bcrypt.check_password_hash(user.password, form.password.data):
+            print(True)
+            login_user(user,remember=True)
+            flash(f'logged in as {user.username}','success')
+            return redirect(url_for('panel')) 
+        else:
+            flash('Check your username and password and login again!', 'danger')
     return render_template("admin.html",title="Admin", form=form)
 
 @app.route("/admin/dept")
+@login_required
 def department():
-    dept=['Computer Sci','Mechanical','Civil','E and C','E and E','Architecture','A and R','Outdoors']
+    if current_user.actype=='student':
+        flash('Admin access only','info')
+        return redirect(url_for('posts'))
+    locations=['Computer Sci','Mechanical','Civil','E and C','E and E','Architecture','A and R','Outdoors']
 
 @app.route("/admin/panel")
+@login_required
 def panel():
-    return render_template("admin-panel.html", title="Admin Panel")
+    if current_user.actype=='student':
+        flash('Admin access only','info')
+        return redirect(url_for('posts'))
+    posts = Post.query.all()
+    return render_template("admin-panel.html", title="Admin Panel", posts=posts)
 
 @app.route("/register", methods = ['GET', 'POST'])
 def register():

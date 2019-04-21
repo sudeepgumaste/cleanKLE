@@ -3,6 +3,8 @@ from wtforms import StringField, PasswordField, SubmitField, BooleanField, Selec
 from flask_wtf.file import FileField, FileAllowed
 from wtforms.validators import DataRequired, Length, Email, EqualTo,ValidationError
 from cleanApp import db
+from cleanApp.models import User
+from flask_login import current_user
 
 class loginForm(FlaskForm):
     usn = StringField('USN', validators=[DataRequired()])
@@ -38,6 +40,22 @@ class registerForm(FlaskForm):
     phone = StringField('Phone no.', validators=[DataRequired(), Length(min=10, max=10)])
 
     submit = SubmitField('Sign Up')
+
+    def validate_username(self, username):
+        user = User.query.filter_by(username = username.data).first()
+        if user:
+            raise ValidationError('That username is already taken, please choose a different one')
+
+    def validate_email(self, email):
+        user = User.query.filter_by(email = email.data.lower()).first()
+        if user:
+            raise ValidationError('That email is already taken, please choose a different email.')
+
+    def validate_usn(self, usn):
+        user = User.query.filter_by(usn = usn.data.lower()).first()
+        if user:
+            raise ValidationError('That USN is already taken. please contact us if it is yours.')
+
 
 class postForm(FlaskForm):
     shortDesc = StringField('Title', validators=[DataRequired(),Length(min=5,max=25)])
