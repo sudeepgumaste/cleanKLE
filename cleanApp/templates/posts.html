@@ -1,41 +1,72 @@
 {% extends "newLay.html" %}
 {% block desc %}
     {% for post in posts %}
-        <div class="jumbotron bg-light">
-            <div class = "d-flex flex-column flex-md-row">
-                <div class="jumbotron jumbotron-fluid p-0 mr-md-4">
-                    <img src="../static/posts/{{post.image_file}}" alt="" class="img-rounded rounded" width="450" height="450">
+        <div class="jumbotron bg-light pb-0">
+            <div class="row">
+                <div class="col">
+                    <div class="jumbotron jumbotron-fluid p-0 mr-md-4">
+                        <img src="../static/posts/{{post.image_file}}" alt="" class="img-rounded rounded">
+                    </div>
+                    <div class="col severity" style="margin:10px;">
+                        <h3>
+                        Severity: 
+                        {% if post.severity=='1' %}
+                            <i class="fas fa-frown-open text-info h2"></i>
+                        {% elif post.severity=='2' %}
+                            <i class="fas fa-sad-tear text-info h2"></i>
+                        {% elif post.severity=='3' %}
+                            <i class="fas fa-sad-cry text-info h2"></i>
+                        {% elif post.severity=='4' %}
+                            <i class="fas fa-dizzy h2 text-info"></i>
+                        {% elif post.severity=='5' %}
+                            <i class="fas fa-radiation-alt h2 text-info"></i>
+                        {% endif %}
+                        </h3>
+                    </div>
                 </div>
-                <div id="description">
-                    <h1>{{post.title}}</h1>
-                    <hr>
-                    <p>{{post.content}}</p>
+                <div class="col text-muted">
+                    <div id="description">
+                        <h1>{{post.title}}</h1>
+                        <hr>
+                        <h3 class="mb-2">Author: {{post.author.username}}</h3>
+                        <h3 class="mb-2">Post Date: {{post.date_posted[:19]}}</h3>
+                        <h3 class="mb-2">
+                            Location:
+                            {% if post.location=='CL' %}
+                                C-lite
+                            {% elif post.location=='ME' %}
+                                Mech. Building
+                            {% elif post.location=='CV' %}
+                                Civil Building
+                            {% elif post.location=='LH' %}
+                                LHC
+                            {% elif post.location=='MB' %}
+                                Main Building
+                            {% elif post.location=='BT' %}
+                                Bio Technology
+                            {% elif post.location=='AC' %}
+                                Architecture
+                            {% elif post.location=='EC' %}
+                                E and C
+                            {% elif post.location=='MC' %}
+                                Main Canteen
+                            {% elif post.location=='Ot' %}
+                                Others
+                            {% endif %}
+                        </h3>
+                        <p class="lead">{{post.content}}</p>
+                        <div class="w-100"></div>
+                        <div class="col"></div>
+                        
+                    </div>
                 </div>
             </div>
         </div>
     {% endfor %}
-    <div class="jumbotron bg-light">
-        <div class = "d-flex flex-column flex-md-row">
-            <div class="jumbotron jumbotron-fluid p-0 mr-md-4">
-                <img src="../static/images/hand.jpg" alt="" class="img-rounded rounded">
-            </div>
-            <div id="description">
-                <h1>Image Description</h1>
-                <hr>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque et animi voluptates temporibus voluptatibus ipsam reprehenderit quia. Aliquam culpa delectus quia non dolorem! Earum quae id nostrum non eos ab modi quis dolorum eum rem omnis quibusdam, molestiae exercitationem voluptatibus minus atque eaque voluptates velit reprehenderit saepe cupiditate corrupti perspiciatis! Tenetur, nihil vitae veritatis sed laudantium, vero odio magni delectus commodi libero nisi, natus dolore eum quisquam officiis voluptates mollitia modi impedit sapiente. Eum, laudantium?</p>
-            </div>
-        </div>
-    </div>
-    <div class="jumbotron bg-light">
-        <div class = "d-flex flex-column flex-md-row">
-            <div class="jumbotron jumbotron-fluid p-0 mr-md-4">
-                <img src="../static/images/fog-foggy-forest-4827.jpg" alt="" class="img-rounded rounded" width="450" height="450">
-            </div>
-            <div id="description">
-                <h1>Image Description</h1>
-                <hr>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque et animi voluptates temporibus voluptatibus ipsam reprehenderit quia. Aliquam culpa delectus quia non dolorem! Earum quae id nostrum non eos ab modi quis dolorum eum rem omnis quibusdam, molestiae exercitationem voluptatibus minus atque eaque voluptates velit reprehenderit saepe cupiditate corrupti perspiciatis! Tenetur, nihil vitae veritatis sed laudantium, vero odio magni delectus commodi libero nisi, natus dolore eum quisquam officiis voluptates mollitia modi impedit sapiente. Eum, laudantium?</p>
-            </div>
-        </div>
-    </div>
+    
+    <style>
+        .img1{
+            border: none;
+        }
+    </style>
 {% endblock desc %}

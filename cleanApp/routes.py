@@ -5,7 +5,7 @@ from cleanApp.forms import loginForm,registerForm,adminLoginForm, postForm
 from flask_login import login_user,current_user, logout_user, login_required
 from cleanApp.models import User,Post
 from PIL import Image
-import os,secrets,cv2
+import os,secrets
 
 @app.route("/")
 @app.route("/login", methods = ['GET', 'POST'])
