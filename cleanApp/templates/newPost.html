@@ -1,9 +1,10 @@
 {% extends "newLay.html" %}
 {% block desc %}
     <div class="jumbotron bg-light" style="padding: 5em">
-        <p class="h1 text-center">Post</p>
+        <p class="h1 text-center">{{legend}}</p>
         <hr>
         <form action="" method="POST" enctype="multipart/form-data">
+            {{ form.hidden_tag() }}
             <div class="input-group mb-4">
                 <div class="input-group-prepend">
                     <span class="input-group-text">Title</span>
@@ -22,12 +23,12 @@
                     <span class="input-group-text">Location / Landmark in vicinity</span>
                 </div>
                 {% if form.location.errors %}
-                {{ form.location(class = "form-control is-invalid", placeholder="Enter a short description") }}
+                {{ form.location(class = "form-control is-invalid") }}
                     {% for error in form.location.errors %}
                     <span>{{ error }}</span>
                     {% endfor %}
                 {% else %}
-                {{ form.location(class = "form-control", placeholder="Enter a short description") }}
+                {{ form.location(class = "form-control") }}
                 {% endif %}
             </div>
             {{ form.degree.label(class="h4 text-muted") }}
@@ -46,17 +47,22 @@
             <div class="form-group">
                 {{ form.briefDesc.label(class="form-control-label h5") }}
                 {% if form.briefDesc.errors %}
-                    {{ form.briefDesc(class="form-control form-control-lg is-invalid mb-5 trans-input", placeholder="Enter the briefDesc") }}
+                    {{ form.briefDesc(class="form-control form-control-lg is-invalid mb-5 trans-input", placeholder="Enter a brief describe") }}
                     <div class="invalid-feedback">
                         {% for error in form.briefDesc.errors %}
                             <span>{{ error }}</span>
                         {% endfor %}
                     </div>
                 {% else %}
-                    {{ form.briefDesc(class="form-control form-control-lg mb-5 trans-input", placeholder="Enter a briefDesc") }}
+                    {{ form.briefDesc(class="form-control form-control-lg mb-5 trans-input", placeholder="Enter a brief description") }}
                 {% endif %}
             </div>
             {{ form.submit(class="btn btn-block btn-lg btn-primary mb-3", style="font-weight: bold; background: #303952; border: #303952") }}
-        </div>
         </form>
+    </div>
+    <style>
+        .a{
+            text-decoration: none
+        }
+    </style>
 {% endblock desc %}

@@ -72,3 +72,20 @@ class postForm(FlaskForm):
     briefDesc = TextAreaField('Brief Description', validators=[DataRequired()])
 
     submit = SubmitField('Post')
+
+
+class updateForm(FlaskForm):
+    shortDesc = StringField('Title', validators=[DataRequired(),Length(min=5,max=25)])
+
+    location = SelectField('Location', choices=[('CL','Clite'), ('ME','Mech. Building'), ('CV','Civil'), ('LH','LHC'),
+                                                ('MB','Main Building'), ('BT','Bio Tech.'), ('AC','Architecture'), 
+                                                ('EC','E and C'), ('MC','Main Canteen'), ('OT','Others'),] )
+
+    degree = RadioField('Degree of discomfort', validators=[DataRequired()],choices=[('1', '<i class="fas fa-frown-open text-info h3"></i>'), ('2', '<i class="fas fa-sad-tear text-info h3"></i>'),
+                         ('3', '<i class="fas fa-sad-cry text-info h3"></i>'), ('4', '<i class="fas fa-dizzy h3 text-info"></i>') , ('5', '<i class="fas fa-radiation-alt h3 text-info"></i>')])
+
+    picture = FileField('Choose the image file', validators=[FileAllowed(['jpg','jpeg', 'png'])])
+
+    briefDesc = TextAreaField('Brief Description', validators=[DataRequired()])
+
+    submit = SubmitField('Post')

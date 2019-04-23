@@ -1,12 +1,27 @@
 from cleanApp import app, db, bcrypt
-from flask import render_template
+from flask import render_template, abort, request
 from flask import url_for, flash, redirect
-from cleanApp.forms import loginForm,registerForm,adminLoginForm, postForm
+from cleanApp.forms import loginForm,registerForm,adminLoginForm, postForm, updateForm
 from flask_login import login_user,current_user, logout_user, login_required
 from cleanApp.models import User,Post
 from PIL import Image
 import os,secrets
 
+
+#generic routes
+@app.route("/works")
+def works():
+    return render_template("works.html",title="How it works?")
+
+@app.route("/about")
+def about():
+    return render_template("about.html", title="About Us")
+
+@app.route("/what")
+def what():
+    return render_template("what.html", title="What is it for?")
+
+#All authentication routes
 @app.route("/")
 @app.route("/login", methods = ['GET', 'POST'])
 def login():
@@ -26,39 +41,13 @@ def login():
 
 @app.route('/logout')
 def logout():
+    if current_user.actype=='student':
+        to='login'
+    else:
+        to='admin'
     logout_user()
-    return redirect(url_for('login'))
+    return redirect(url_for(to))
 
-@app.route("/admin", methods = ['GET', 'POST'])
-def admin():
-    form = adminLoginForm()
-    if form.validate_on_submit():
-        user = User.query.filter_by(username=form.username.data).first()
-        if user and bcrypt.check_password_hash(user.password, form.password.data):
-            print(True)
-            login_user(user,remember=True)
-            flash(f'logged in as {user.username}','success')
-            return redirect(url_for('panel')) 
-        else:
-            flash('Check your username and password and login again!', 'danger')
-    return render_template("admin.html",title="Admin", form=form)
-
-@app.route("/admin/dept")
-@login_required
-def department():
-    if current_user.actype=='student':
-        flash('Admin access only','info')
-        return redirect(url_for('posts'))
-    locations=['Computer Sci','Mechanical','Civil','E and C','E and E','Architecture','A and R','Outdoors']
-
-@app.route("/admin/panel")
-@login_required
-def panel():
-    if current_user.actype=='student':
-        flash('Admin access only','info')
-        return redirect(url_for('posts'))
-    posts = Post.query.all()
-    return render_template("admin-panel.html", title="Admin Panel", posts=posts)
 
 @app.route("/register", methods = ['GET', 'POST'])
 def register():
@@ -76,22 +65,13 @@ def register():
             return redirect(url_for('login'))
     return render_template("register.html",title="Register", form=form)
 
-@app.route("/works")
-def works():
-    return render_template("works.html",title="How it works?")
-
-@app.route("/about")
-def about():
-    return render_template("about.html", title="About Us")
-
-@app.route("/what")
-def what():
-    return render_template("what.html", title="What is it for?")
+#end of authentication routes
+#All post related routes
 
 @app.route("/posts")
 @login_required
 def posts():
-    posts=loadPosts()
+    posts=Post.query.all()
     return render_template("posts.html", title="Posts", posts=posts)
 
 #function for randomizing image file names and resizing
@@ -130,9 +110,88 @@ def newPost():
             return redirect(url_for('posts'))
         else:
             pass
-    return render_template("newPost.html", title="New Post", form=form)
+    return render_template("newPost.html", title="New Post", form=form, legend='Post')
+
+@app.route("/post/<int:post_id>")
+def iso_post(post_id):
+    post = Post.query.get_or_404(post_id)
+    return render_template('post.html', title=post.title, post=post)
+
+@app.route("/post/<int:post_id>/update", methods=['GET', 'POST'])
+@login_required
+def update_post(post_id):
+    post = Post.query.get_or_404(post_id)
+    if post.author!=current_user:
+        abort(403)
+    form = updateForm()
+    if form.validate_on_submit():
+        post.title = form.shortDesc.data
+        post.content = form.briefDesc.data
+        post.location = form.location.data
+        post.severity = form.degree.data
+        if form.picture.data:
+            post.image_file = resize(form.picture.data)
+        db.session.commit()
+        flash('Your post has been updated!', 'success')
+        return redirect(url_for('iso_post', post_id=post.id))
+    elif request.method == 'GET':
+        form.shortDesc.data=post.title
+        form.briefDesc.data=post.content
+        form.degree.data = post.severity
+        form.picture.data = post.image_file
+    else:
+        print(form.errors)
+    return render_template('newPost.html', title='Update Post', form=form, legend = 'Update Post')
 
 
-def loadPosts():
-    posts=Post.query.all()
-    return posts
+@app.route("/post/<int:post_id>/delete", methods=['POST'])
+@login_required
+def delete_post(post_id):
+    post = Post.query.get_or_404(post_id)
+    if post.author!=current_user and current_user=='student' :
+        abort(403)
+    db.session.delete(post)
+    db.session.commit()
+    flash("Your post has been deleted",'success')
+    return redirect(url_for('posts'))
+
+#End of post related routes
+
+#All admin related routes
+@app.route("/admin", methods = ['GET', 'POST'])
+def admin():
+    form = adminLoginForm()
+    if form.validate_on_submit():
+        user = User.query.filter_by(username=form.username.data).first()
+        if user and bcrypt.check_password_hash(user.password, form.password.data):
+            print(True)
+            login_user(user,remember=True)
+            flash(f'logged in as {user.username}','success')
+            return redirect(url_for('location')) 
+        else:
+            flash('Check your username and password and login again!', 'danger')
+    return render_template("admin.html",title="Admin", form=form)
+
+@app.route("/admin/location")
+@login_required
+def location():
+    if current_user.actype=='student':
+        abort(403)
+    locs = [['MB','Main Building'],['ME','Mechanical Building'],['CV','Civil Department'],
+            ['MC','Main Canteen'],['EC', 'E and C Building'],['CL','C-Lite'],['LH','LHC Area'],
+            ['AC','Architecture'],['BT','Bio Tech Building']]
+
+    for i in range(len(locs)):
+        locs[i].append(len(Post.query.filter(Post.location==locs[i][0] and Post.resolved==False).all()))
+
+    print(locs)
+    return render_template('locations.html', locs=locs)
+
+@app.route("/admin/location/<string:loc_name>")
+@login_required
+def panel(loc_name):
+    if current_user.actype=='student':
+        abort(403)
+    posts=Post.query.filter_by(location=loc_name)
+    return render_template("admin-panel.html", title="Admin Panel", posts=posts)
+

@@ -1,11 +1,13 @@
+<!--This template is for all the posts-->
+
 {% extends "newLay.html" %}
 {% block desc %}
     {% for post in posts %}
-        <div class="jumbotron bg-light pb-0">
+        <div class="jumbotron bg-light pb-0 border shadow">
             <div class="row">
                 <div class="col-md-6 text-center">
                     <div class="jumbotron jumbotron-fluid p-0">
-                        <img src="../static/posts/{{post.image_file}}" alt="" class="img-rounded rounded " style="max-width: 100%; max-height:100% ;">
+                        <img src="../static/posts/{{post.image_file}}" alt="Error loading image file" class="img-rounded rounded " style="max-width: 100%; max-height:100% ;">
                     </div>
                     <div>
                         <h3 class="text-muted">
@@ -26,7 +28,7 @@
                 </div>
                 <div class="col-md-6 text-muted">
                     <div id="description">
-                        <h1>{{post.title}}</h1>
+                        <a class="h1" href="{{url_for('iso_post',post_id=post.id)}}">{{post.title}}</a>
                         <hr>
                         <h3 class="mb-2">Author: {{post.author.username}}</h3>
                         <h3 class="mb-2">Post Date: {{post.date_posted[:19]}}</h3>
@@ -67,6 +69,9 @@
     <style>
         .img1{
             border: none;
+        }
+        a{
+            text-decoration: none
         }
     </style>
 {% endblock desc %}

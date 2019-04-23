@@ -53,7 +53,7 @@
                         </li>
                     {% endif %}
 
-                    {% if title=='How it works?' or title=='What is it for?' or title=='About Us' %}
+                    {% if (title=='How it works?' or title=='What is it for?' or title=='About Us') and current_user.is_authenticated==false %}
                         <li class="nav-item">
                             <a href="{{ url_for('login') }}" class="nav-link">Login</a>
                         </li>
@@ -96,7 +96,7 @@
         {% if messages %}
             {% for category,message in messages %}
                 <div class="container">
-                    <div class="alert alert-{{ category }} text-center">
+                    <div class="alert alert-{{ category }} text-center mt-2">
                         {{ message }}
                     </div>
                 </div>

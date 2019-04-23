@@ -1,0 +1,12 @@
+{% extends "newLay.html" %}
+{% block desc %}
+    <div class="container mb-0 py-3">
+        <div class="jumbotron bg-light shadow pt-3 mt-5 mb-5">
+            <h3 class="text-center border-bottom pb-3">Departments</h3>
+            {% for loc_code,loc_name,count in locs %}
+                <a href="{{ url_for('panel',loc_name=loc_code)}}" class="btn btn-outline-info btn-lg btn-block">{{loc_name}} [{{count}}]</a>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock desc %}
+
