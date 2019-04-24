@@ -61,6 +61,13 @@
                             Others
                         {% endif %}
                     </h3>
+                    <h3>Status : 
+                        {% if post.resolved==True %}
+                            resolved
+                        {% else %}
+                            unresolved
+                        {% endif %}
+                    </h3>
                     <p class="lead">{{post.content}}</p>
                     <div class="w-100"></div>
                     <div class="col"></div>

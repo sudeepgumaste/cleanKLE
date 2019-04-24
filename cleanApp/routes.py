@@ -23,7 +23,7 @@ def what():
 
 #All authentication routes
 @app.route("/")
-@app.route("/login", methods = ['GET', 'POST'])
+@app.route("/login", methods = ['GET', 'POST'] )
 def login():
     if current_user.is_authenticated:
         return redirect(url_for('posts'))
@@ -156,6 +156,18 @@ def delete_post(post_id):
     flash("Your post has been deleted",'success')
     return redirect(url_for('posts'))
 
+@app.route("/post/<int:post_id>/resolve", methods=['POST'])
+@login_required
+def resolve_post(post_id):
+    if current_user.actype=="student":
+        abort(403)
+    post = Post.query.get_or_404(post_id)
+    loc = post.location
+    post.resolved=True
+    db.session.commit()
+    flash("Resolved issue has been recorded",'success')
+    return redirect(url_for('panel',loc_name=loc))
+
 #End of post related routes
 
 #All admin related routes
@@ -183,7 +195,7 @@ def location():
             ['AC','Architecture'],['BT','Bio Tech Building']]
 
     for i in range(len(locs)):
-        locs[i].append(len(Post.query.filter(Post.location==locs[i][0] and Post.resolved==False).all()))
+        locs[i].append(len(Post.query.filter(Post.location==locs[i][0]).filter(Post.resolved==False).all()))
 
     print(locs)
     return render_template('locations.html', locs=locs)
