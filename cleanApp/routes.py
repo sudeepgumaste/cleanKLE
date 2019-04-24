@@ -1,7 +1,7 @@
 from cleanApp import app, db, bcrypt
 from flask import render_template, abort, request
 from flask import url_for, flash, redirect
-from cleanApp.forms import loginForm,registerForm,adminLoginForm, postForm, updateForm
+from cleanApp.forms import loginForm,registerForm,adminLoginForm, postForm, updateForm, commentForm
 from flask_login import login_user,current_user, logout_user, login_required
 from cleanApp.models import User,Post
 from PIL import Image
@@ -115,7 +115,8 @@ def newPost():
 @app.route("/post/<int:post_id>")
 def iso_post(post_id):
     post = Post.query.get_or_404(post_id)
-    return render_template('post.html', title=post.title, post=post)
+    form = commentForm()
+    return render_template('post.html', title=post.title, post=post, form=form)
 
 @app.route("/post/<int:post_id>/update", methods=['GET', 'POST'])
 @login_required

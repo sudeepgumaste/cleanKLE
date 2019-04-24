@@ -47,22 +47,17 @@
             <div class="form-group">
                 {{ form.briefDesc.label(class="form-control-label h5") }}
                 {% if form.briefDesc.errors %}
-                    {{ form.briefDesc(class="form-control form-control-lg is-invalid mb-5 trans-input", placeholder="Enter a brief describe") }}
+                    {{ form.briefDesc(class="form-control form-control-lg is-invalid mb-5", placeholder="Enter a brief describe") }}
                     <div class="invalid-feedback">
                         {% for error in form.briefDesc.errors %}
                             <span>{{ error }}</span>
                         {% endfor %}
                     </div>
                 {% else %}
-                    {{ form.briefDesc(class="form-control form-control-lg mb-5 trans-input", placeholder="Enter a brief description") }}
+                    {{ form.briefDesc(class="form-control form-control-lg mb-5", placeholder="Enter a brief description") }}
                 {% endif %}
             </div>
             {{ form.submit(class="btn btn-block btn-lg btn-primary mb-3", style="font-weight: bold; background: #303952; border: #303952") }}
         </form>
     </div>
-    <style>
-        .a{
-            text-decoration: none
-        }
-    </style>
 {% endblock desc %}

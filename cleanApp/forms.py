@@ -89,3 +89,7 @@ class updateForm(FlaskForm):
     briefDesc = TextAreaField('Brief Description', validators=[DataRequired()])
 
     submit = SubmitField('Post')
+
+class commentForm(FlaskForm):
+    comment = StringField('comment', validators=[DataRequired()])
+    submit = SubmitField('Comment')
