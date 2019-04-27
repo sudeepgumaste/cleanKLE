@@ -3,7 +3,7 @@ from flask import render_template, abort, request
 from flask import url_for, flash, redirect
 from cleanApp.forms import loginForm,registerForm,adminLoginForm, postForm, updateForm, commentForm
 from flask_login import login_user,current_user, logout_user, login_required
-from cleanApp.models import User,Post
+from cleanApp.models import User, Post, Comments
 from PIL import Image
 import os,secrets
 
@@ -22,10 +22,12 @@ def what():
     return render_template("what.html", title="What is it for?")
 
 #All authentication routes
-@app.route("/")
+@app.route("/", methods = ['GET', 'POST'])
 @app.route("/login", methods = ['GET', 'POST'] )
 def login():
     if current_user.is_authenticated:
+        if current_user.actype=="admin":
+            return redirect(url_for('location'))
         return redirect(url_for('posts'))
     form = loginForm()
     if form.validate_on_submit():
@@ -100,23 +102,31 @@ def resize(image_file):
 @login_required
 def newPost():
     form = postForm()
-    if form.validate_on_submit:
+    if form.validate_on_submit():
         if form.picture.data:
             picture_file = resize(form.picture.data)
             post = Post(title=form.shortDesc.data, content=form.briefDesc.data, location=form.location.data,
                     severity=form.degree.data, user_id=current_user.id, image_file=picture_file )
             db.session.add(post)
             db.session.commit()
+            flash('Your post has been added', 'success')
             return redirect(url_for('posts'))
         else:
             pass
     return render_template("newPost.html", title="New Post", form=form, legend='Post')
 
-@app.route("/post/<int:post_id>")
+@app.route("/post/<int:post_id>" , methods = ['GET', 'POST'])
 def iso_post(post_id):
     post = Post.query.get_or_404(post_id)
     form = commentForm()
-    return render_template('post.html', title=post.title, post=post, form=form)
+    comments = Comments.query.filter_by(post_id = post.id)
+    if form.validate_on_submit():
+        com = Comments(comment = form.comment.data, user_id = current_user.id, post_id = post.id)
+        db.session.add(com)
+        db.session.commit()
+        flash('Comment successfully added', 'success')
+        return redirect(url_for('iso_post', post_id=post.id))
+    return render_template('post.html', title=post.title, post=post, form=form, comments = comments)
 
 @app.route("/post/<int:post_id>/update", methods=['GET', 'POST'])
 @login_required

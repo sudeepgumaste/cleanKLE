@@ -2,7 +2,7 @@
 
 {% extends "newLay.html" %}
 {% block desc %}
-    <div class="jumbotron bg-light pb-0 border shadow my-5">
+    <div class="jumbotron bg-light pb-0 border shadow">
         <div class="row">
             <div class="col-md-6 text-center">
                 <div class="jumbotron jumbotron-fluid p-0">
@@ -75,9 +75,9 @@
             </div>
         </div>
         <!--Comments section-->
-        <div class="row mt-3">
-            <div class="col-md-8 col-lg-10 col-8">
-                <form action="">
+        <form action="" method="POST">
+            <div class="row">
+                <div class="col-md-8 col-lg-10 col-8">
                     {{ form.hidden_tag() }}
                     <div class="form-group">
                         {% if form.comment.errors %}
@@ -91,16 +91,18 @@
                             {{ form.comment(class="form-control", placeholder="Add a comment") }}
                         {% endif %}
                     </div>
-                </form>
+                </div>
+                <div class="col">
+                    {{ form.submit(class="btn btn-success btn-block") }}
+                </div>
             </div>
-            <div class="col">
-                {{ form.submit(class="btn btn-success btn-block") }}
-            </div>
-        </div>
+        </form>
+        {% for comment in comments %}
         <div class="row mt-3 ml-3">
-            <h5 class="text-muted">UserName</h5>
-            <p class="ml-5 pr-5"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, eos ea, repudiandae mollitia, iste sint reprehenderit quos voluptatum velit illum magnam esse impedit quaerat modi optio voluptas facere laboriosam ut?</p>
+            <h5 class="text-muted">{{comment.quoter.username}}</h5>
+            <p class="ml-3 pr-5 mt-4">{{comment.comment}}</p>
         </div>
+        {% endfor %}
     </div>
     <!-- Modal -->
     <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true">

@@ -18,6 +18,7 @@ class User(db.Model,UserMixin):
     phone = db.Column(db.String(10), nullable = True, default=None)
     actype = db.Column(db.String(7), nullable = True, default='student')
     posts = db.relationship('Post', backref = 'author', lazy = True)
+    comments = db.relationship('Comments', backref = 'quoter', lazy = True)
 
     def __repr__(self):
         return f"User('{self.username}', '{self.email}', '{self.usn}')"
@@ -33,7 +34,7 @@ class Post(db.Model):
     image_file = db.Column(db.String(30), nullable = False, default = 'default.jpg')
     resolved = db.Column(db.Boolean, default=False, nullable=False)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable = False)
-    comments = db.relationship('Comments', backref = 'quoter', lazy = True)
+    comments_all = db.relationship('Comments', backref = 'quote_on', lazy = True)
 
     def __repr__(self):
         return f"Post('{self.title}', '{self.date_posted}')"
@@ -44,3 +45,6 @@ class Comments(db.Model):
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable = False)
     post_id = db.Column(db.Integer, db.ForeignKey('post.id'), nullable = False)
     
+    def __repr__(self):
+        return f"Comment('{self.comment}',{self.user_id}, {self.post_id})"
+        
