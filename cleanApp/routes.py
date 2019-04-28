@@ -21,6 +21,7 @@ def about():
 def what():
     return render_template("what.html", title="What is it for?")
 
+#End of generic routes
 #All authentication routes
 @app.route("/", methods = ['GET', 'POST'])
 @app.route("/login", methods = ['GET', 'POST'] )
@@ -56,15 +57,19 @@ def register():
     if current_user.is_authenticated:
         return redirect(url_for('posts'))
     form = registerForm()
+
     if form.validate_on_submit():
-        if form.validate_on_submit():
-            hasshed_passwd = bcrypt.generate_password_hash(form.password.data).decode('utf-8')
-            user = User(usn = form.usn.data.lower(), username = form.username.data, email = form.email.data.lower(), password = hasshed_passwd,
-                        branch = form.branch.data, sem = form.sem.data, phone = form.phone.data)
-            db.session.add(user)
-            db.session.commit()
-            flash(f'Account created for {form.username.data}! You can login now!', 'success')
-            return redirect(url_for('login'))
+        if form.profile_pic.data:
+            image_file=resize(form.profile_pic.data,200,'static/profile_pics')
+        else:
+            image_file = 'default.jpg'
+        hasshed_passwd = bcrypt.generate_password_hash(form.password.data).decode('utf-8')
+        user = User(usn = form.usn.data.lower(), username = form.username.data, email = form.email.data.lower(), password = hasshed_passwd,
+                    branch = form.branch.data, sem = form.sem.data, phone = form.phone.data, profile_pic=image_file)
+        db.session.add(user)
+        db.session.commit()
+        flash(f'Account created for {form.username.data}! You can login now!', 'success')
+        return redirect(url_for('login'))
     return render_template("register.html",title="Register", form=form)
 
 #end of authentication routes
@@ -77,11 +82,11 @@ def posts():
     return render_template("posts.html", title="Posts", posts=posts)
 
 #function for randomizing image file names and resizing
-def resize(image_file):
+def resize(image_file,size,path):
     random_hex = secrets.token_hex(8)
     _,f_ext = os.path.splitext(image_file.filename)
     picture_fn = random_hex + f_ext
-    picture_path = os.path.join(app.root_path, 'static/posts', picture_fn)
+    picture_path = os.path.join(app.root_path, path, picture_fn)
 
     img=Image.open(image_file)
     w,h=img.size
@@ -94,7 +99,7 @@ def resize(image_file):
     else:
         left,top,right,bottom=0,0,w,h
     img = img.crop((left,top,right,bottom))
-    img.thumbnail((500,500))
+    img.thumbnail((size,size))
     img.save(picture_path)
     return picture_fn
 
@@ -104,7 +109,7 @@ def newPost():
     form = postForm()
     if form.validate_on_submit():
         if form.picture.data:
-            picture_file = resize(form.picture.data)
+            picture_file = resize(form.picture.data,500,'static/posts')
             post = Post(title=form.shortDesc.data, content=form.briefDesc.data, location=form.location.data,
                     severity=form.degree.data, user_id=current_user.id, image_file=picture_file )
             db.session.add(post)

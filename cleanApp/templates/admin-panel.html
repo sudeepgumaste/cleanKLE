@@ -1,22 +1,5 @@
 {% extends "newLay.html" %}
 {% block desc %}
-<div class="container">
-    <form action="" class="text-center">
-        <div class="input-group mb-4 mt-0">
-            <div class="input-group-prepend">
-                <span class="input-group-text bg-success text-light">Filter By</span>
-            </div>
-            <select name="filter" id="filter" class="form-control" >
-                <option value="res">Resolved</option>
-                <option value="unres">UnResolved</option>
-                <option value="sev">Severity</option>
-            </select>
-            <div class="input-group-append">
-                <button class="input-group btn btn-success"> Go </button>
-            </div>
-        </div>
-    </form>
-</div>
 {% for post in posts %}
     <div class="jumbotron bg-light py-3 px-0 border shadow">
         <div class="row m-0">
@@ -26,7 +9,7 @@
                 </div>
             </div>
             <div class="col-lg-4 col-md-8 align-self-center">
-                <h4>{{post.title}}</h4>
+                <a href="{{url_for('iso_post',post_id=post.id)}}" class="h3">{{post.title}}</a>
                 <hr>
                 <h5 class="mb-2">
                 Location:

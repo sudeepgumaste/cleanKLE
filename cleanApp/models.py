@@ -9,6 +9,7 @@ def load_user(username):
 
 class User(db.Model,UserMixin):
     id = db.Column(db.Integer, primary_key = True)
+    profile_pic = db.Column(db.String(30), unique = True, nullable = False, default = "default.jpg")
     usn = db.Column(db.String(12), unique = True, default=None)
     username = db.Column(db.String(20), unique = True, nullable = False)
     email = db.Column(db.String(120), unique = True, nullable = True, default=None)

@@ -2,11 +2,11 @@
 {% block content %}
     <div class="jumbotron" style="padding-top: 20px;padding-bottom: 20px;	background-color: rgba(255,255,255,0.2);">
         <h3 style="text-align:center;" class="mb-3"><i class="fas fa-user-plus"></i> Sign Up</h2>
-        <form method="POST">
+        <form method="POST" enctype="multipart/form-data">
             {{ form.hidden_tag() }}
         <div style="text-align:center;">
         <div class="form-group">
-            {{ form.username.label(class="form-control-label  h6") }}
+            {{ form.username.label(class="form-control-label") }}
             {% if form.username.errors %}
                 {{ form.username(class = "form-control is-invalid trans-input", placeholder="Choose a username") }}
                 <div class="bg-danger rounded">
@@ -18,8 +18,17 @@
                 {{ form.username(class = "form-control trans-input", placeholder="Choose a username") }}
             {% endif %}
         </div>
+        <div class="form-group" align="center">
+            {{ form.profile_pic.label(class="form-control-label") }}
+            {{ form.profile_pic(class="form-control-file") }}
+            {% if form.profile_pic.errors %}
+                {% for error in form.profile_pic.errors %}
+                    <span class="test-danger">{{ error }}</span>
+                {% endfor %}
+            {% endif %}
+        </div>
         <div class="form-group">
-                {{ form.email.label(class="form-control-label  h6") }}
+                {{ form.email.label(class="form-control-label") }}
                 {% if form.email.errors %}
                     {{ form.email(class = "form-control is-invalid trans-input", placeholder="Enter your email") }}
                     <div class="bg-danger rounded">
@@ -32,7 +41,7 @@
                 {% endif %}
             </div>
         <div class="form-group">
-            {{ form.password.label(class="form-control-label  h6") }}
+            {{ form.password.label(class="form-control-label") }}
             {% if form.password.errors %}
                 {{ form.password(class="form-control is-invalid trans-input", placeholder="Choose a password") }}
                 <div class="bg-danger rounded ">
@@ -45,7 +54,7 @@
             {% endif %}
         </div>
         <div class="form-group">
-            {{ form.confirmPassword.label(class="form-control-label  h6") }}
+            {{ form.confirmPassword.label(class="form-control-label") }}
             {% if form.confirmPassword.errors %}
                 {{ form.confirmPassword(class="form-control is-invalid trans-input", placeholder="Confirm the password") }}
                 <div class="bg-danger rounded ">
@@ -58,7 +67,7 @@
             {% endif %}
         </div>
         <div class="form-group">
-            {{ form.usn.label(class="form-control-label  h6") }}
+            {{ form.usn.label(class="form-control-label") }}
             {% if form.usn.errors %}
                 {{ form.usn(class="form-control is-invalid trans-input", placeholder="Enter your usn") }}
                 <div class="bg-danger rounded ">
@@ -71,7 +80,7 @@
             {% endif %}
         </div>
         <div class="form-group">
-            {{ form.phone.label(class="form-control-label  h6") }}
+            {{ form.phone.label(class="form-control-label") }}
             {% if form.phone.errors %}
                 {{ form.phone(class="form-control is-invalid trans-input", placeholder="Enter your phone number") }}
                 <div class="bg-danger rounded ">
@@ -85,9 +94,9 @@
         </div>
         <div class="form-inline justify-content-around">
             <!--Branch-->
-            {{ form.branch.label(class="form-control-label  h6 mr-2") }}
+            {{ form.branch.label(class="form-control-label mr-md-2 mb-2") }}
             {% if form.branch.errors %}
-                {{ form.branch(class="form-control is-invalid trans-input mr-3") }}
+                {{ form.branch(class="form-control is-invalid trans-input mr-md-3") }}
                 <div class="bg-danger rounded ">
                     {% for error in form.branch.errors %}
                         <span>{{ error }}</span>
@@ -98,7 +107,7 @@
             {% endif %}
 
             <!--Semister-->
-            {{ form.sem.label(class="form-control-label h6 mr-2") }}
+            {{ form.sem.label(class="form-control-label mr-2") }}
             {% if form.sem.errors %}
                 {{ form.sem(class="form-control is-invalid trans-input mr-3", placeholder="Enter your current semester") }}
                 <div class="bg-danger rounded ">

@@ -31,6 +31,8 @@ class registerForm(FlaskForm):
 
     usn = StringField('USN', validators=[DataRequired()])
 
+    profile_pic = FileField('Choose your profile picture', validators=[FileAllowed(['jpg','jpeg', 'png', 'bmp'])])
+
     branch  = SelectField('Branch', choices = [('CS','Computer Sci'), ('ME', 'Mechanical'), ('CV','Civil'),
                                          ('EC', 'E and C'), ('EE', 'E and E'), ('AC', 'Architecture')
                                          , ('AR', 'A and R')])
