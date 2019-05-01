@@ -41,19 +41,13 @@
                         </li>
                     {% endif %}
 
-                    {% if title!='What is it for?' %}
-                        <li class="nav-item">
-                            <a href="{{ url_for('what') }}" class="nav-link">What's it for</a>
-                        </li>
-                    {% endif %}
-
                     {% if title!='About Us' %}
                         <li class="nav-item">
                             <a href="{{ url_for('about') }}" class="nav-link">About Us</a>
                         </li>
                     {% endif %}
 
-                    {% if (title=='How it works?' or title=='What is it for?' or title=='About Us') and current_user.is_authenticated==false %}
+                    {% if (title=='How it works?' or title=='About Us') and current_user.is_authenticated==false %}
                         <li class="nav-item">
                             <a href="{{ url_for('login') }}" class="nav-link">Login</a>
                         </li>

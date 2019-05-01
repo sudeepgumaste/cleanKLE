@@ -82,7 +82,7 @@
         <!--Comments section-->
         <form action="" method="POST">
             <div class="row">
-                <div class="col-md-8 col-lg-10 col-8">
+                <div class="col-md-8 col-lg-10 col-12">
                     {{ form.hidden_tag() }}
                     <div class="form-group">
                         {% if form.comment.errors %}
@@ -98,7 +98,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    {{ form.submit(class="btn btn-success btn-block") }}
+                    {{ form.submit(class="btn btn-success btn-block mb-3") }}
                 </div>
             </div>
         </form>

@@ -4,6 +4,7 @@ from flask import url_for, flash, redirect
 from cleanApp.forms import loginForm,registerForm,adminLoginForm, postForm, updateForm, commentForm
 from flask_login import login_user,current_user, logout_user, login_required
 from cleanApp.models import User, Post, Comments
+from cleanApp.email import Mail
 from PIL import Image
 import os,secrets
 
@@ -68,6 +69,8 @@ def register():
                     branch = form.branch.data, sem = form.sem.data, phone = form.phone.data, profile_pic=image_file)
         db.session.add(user)
         db.session.commit()
+        mail = Mail(user.email,f'Hello their!\n Congratulations {user.username}! Your registration was successful') 
+        mail.send()
         flash(f'Account created for {form.username.data}! You can login now!', 'success')
         return redirect(url_for('login'))
     return render_template("register.html",title="Register", form=form)
@@ -79,6 +82,7 @@ def register():
 @login_required
 def posts():
     posts=Post.query.all()
+    posts = posts[::-1]
     return render_template("posts.html", title="Posts", posts=posts)
 
 #function for randomizing image file names and resizing
@@ -102,6 +106,7 @@ def resize(image_file,size,path):
     img.thumbnail((size,size))
     img.save(picture_path)
     return picture_fn
+
 
 @app.route("/posts/create", methods = ['GET', 'POST'])
 @login_required
@@ -129,6 +134,8 @@ def iso_post(post_id):
         com = Comments(comment = form.comment.data, user_id = current_user.id, post_id = post.id)
         db.session.add(com)
         db.session.commit()
+        mail = Mail(post.author.email,f"There's a new comment on your post by {com.quoter.username}\n \"{com.comment}\" ")
+        mail.send()
         flash('Comment successfully added', 'success')
         return redirect(url_for('iso_post', post_id=post.id))
     return render_template('post.html', title=post.title, post=post, form=form, comments = comments)
@@ -146,7 +153,11 @@ def update_post(post_id):
         post.location = form.location.data
         post.severity = form.degree.data
         if form.picture.data:
-            post.image_file = resize(form.picture.data)
+            img_loc = post.image_file
+            old_file = os.path.join(app.root_path, 'static/posts', img_loc)
+            os.remove(old_file)
+            post.image_file = resize(form.picture.data,500,'static/posts')
+
         db.session.commit()
         flash('Your post has been updated!', 'success')
         return redirect(url_for('iso_post', post_id=post.id))
@@ -166,6 +177,12 @@ def delete_post(post_id):
     post = Post.query.get_or_404(post_id)
     if post.author!=current_user and current_user=='student' :
         abort(403)
+    comments = Comments.query.filter_by(post_id=post_id).all()
+    for comment in comments:
+        db.session.delete(comment)
+    img_loc = post.image_file
+    old_file = os.path.join(app.root_path, 'static/posts', img_loc)
+    os.remove(old_file)
     db.session.delete(post)
     db.session.commit()
     flash("Your post has been deleted",'success')
