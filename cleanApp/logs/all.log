@@ -1,0 +1,55 @@
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 273-280-401
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 327-789-315
+INFO:werkzeug: * Detected change in '/home/elli0t/projects/dba_proj/cleanApp/email.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 326-966-396
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 289-486-445
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 12:05:14] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 12:05:14] "GET /static/login.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 12:05:14] "GET /static/CollegeDark.jpg HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 12:05:15] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 12:05:17] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 12:06:57] "POST /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 12:07:26] "POST /register HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 12:07:26] "GET /register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 12:07:26] "GET /register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 12:07:26] "GET /register?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 12:07:26] "GET /register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 12:07:26] "GET /register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 12:08:08] "POST /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 12:08:52] "POST /register HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 12:08:52] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 12:09:14] "POST /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 12:09:14] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 12:09:19] "GET /posts/create HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/elli0t/projects/dba_proj/cleanApp/routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 170-897-863
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 12:10:48] "POST /posts/create HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 12:10:48] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 12:10:48] "GET /static/profile_pics/358165a67654886d.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 12:10:48] "GET /static/posts/55e7744245b7885f.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 12:10:51] "GET /logout HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 12:10:51] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 12:10:56] "POST /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 12:10:56] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 12:10:58] "GET /post/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 12:11:09] "POST /post/1 HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 12:11:09] "GET /post/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 12:11:10] "GET /static/profile_pics/6352746dadbe48fe.jpg HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 12:11:50] "GET /logout HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 12:11:50] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 12:12:03] "GET /works HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 12:34:56] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 12:35:27] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 12:35:39] "POST /admin HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 12:35:39] "GET /admin/location HTTP/1.1" 200 -

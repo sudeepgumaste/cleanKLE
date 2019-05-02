@@ -1,9 +1,11 @@
 import smtplib
 import os
 from email.message import EmailMessage
+import logging
 
 EMAIL=os.environ.get('CA_MAIL')
 PASS = os.environ.get('CA_PASS')
+logging.basicConfig(filename='./cleanApp/logs/all.log', level=logging.INFO)
 
 
 class Mail():
@@ -17,5 +19,9 @@ class Mail():
     def send(self):
         with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
             smtp.login(EMAIL,PASS)
+            try:
+                smtp.send_message(self.msg)
+            except:
+                logging.info('Error! no internet connectivity')
+                print('Error! no internet connectivity')
 
-            smtp.send_message(self.msg)

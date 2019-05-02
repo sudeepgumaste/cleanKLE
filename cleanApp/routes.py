@@ -18,10 +18,6 @@ def works():
 def about():
     return render_template("about.html", title="About Us")
 
-@app.route("/what")
-def what():
-    return render_template("what.html", title="What is it for?")
-
 #End of generic routes
 #All authentication routes
 @app.route("/", methods = ['GET', 'POST'])
@@ -69,7 +65,7 @@ def register():
                     branch = form.branch.data, sem = form.sem.data, phone = form.phone.data, profile_pic=image_file)
         db.session.add(user)
         db.session.commit()
-        mail = Mail(user.email,f'Hello their!\n Congratulations {user.username}! Your registration was successful') 
+        mail = Mail(user.email,f'Hello there!\n Congratulations {user.username}! Your registration was successful') 
         mail.send()
         flash(f'Account created for {form.username.data}! You can login now!', 'success')
         return redirect(url_for('login'))
