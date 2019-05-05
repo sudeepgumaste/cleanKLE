@@ -1,7 +1,7 @@
 {% extends "newLay.html" %}
 {% block desc %}
 {% for post in posts %}
-    <div class="jumbotron bg-light py-3 px-0 border shadow">
+    <div class="jumbotron bg-light py-3 px-0 border shadow d-flex justify-content-center">
         <div class="row m-0">
             <div class="col-lg-3 col-md-4">
                 <div class="img-thumbnail" style="overflow:hidden; background:none;border:none;">
@@ -43,7 +43,7 @@
                 </h5>
                 <p class="mb-0" >{{post.content}}</p>
             </div>
-            <div class="col-lg-3 col-md-6 align-self-center">
+            <div class="col-lg-3 col-md-6 align-self-center justify-content-center">
                 <div class="adminpannel-text" style="text-align:center;padding-top:30%;padding-bottom: 30%;">
                     <h3 class="text-muted">
                         Severity: 
@@ -61,12 +61,12 @@
                     </h3>
                 </div>
             </div>
-            <div class="col-lg-2 col-md-6 align-self-center">
+            <div class="col-lg-2 col-md-6 align-self-center justify-content-center">
                     <div class="adminpannel-text">
                         {% if post.resolved==False %}
-                            <button class="btn btn-success" data-toggle="modal" data-target="#resolvePost" >Resolved</button>                    
+                            <button class="btn btn-success btn-block" data-toggle="modal" data-target="#resolvePost" >Resolved</button>                    
                         {% else %}
-                            <button class="btn btn-success" disabled>Resolved</button>                    
+                            <button class="btn btn-success btn-block" disabled>Resolved</button>                    
                         {% endif %}
                     </div>                            
                 </div>

@@ -171,6 +171,7 @@ def update_post(post_id):
 @login_required
 def delete_post(post_id):
     post = Post.query.get_or_404(post_id)
+    loc = post.location
     if post.author!=current_user and current_user=='student' :
         abort(403)
     comments = Comments.query.filter_by(post_id=post_id).all()
@@ -181,8 +182,12 @@ def delete_post(post_id):
     os.remove(old_file)
     db.session.delete(post)
     db.session.commit()
-    flash("Your post has been deleted",'success')
-    return redirect(url_for('posts'))
+    if current_user.actype=='admin':
+        flash("Post deleted successfully","info")
+        return redirect(url_for('panel',loc_name=loc))
+    else:
+        flash("Your post has been deleted",'success')
+        return redirect(url_for('posts'))
 
 @app.route("/post/<int:post_id>/resolve", methods=['POST'])
 @login_required
@@ -225,7 +230,6 @@ def location():
     for i in range(len(locs)):
         locs[i].append(len(Post.query.filter(Post.location==locs[i][0]).filter(Post.resolved==False).all()))
 
-    print(locs)
     return render_template('locations.html', locs=locs)
 
 @app.route("/admin/location/<string:loc_name>")

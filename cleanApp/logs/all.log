@@ -53,3 +53,690 @@ INFO:werkzeug:127.0.0.1 - - [02/May/2019 12:34:56] "GET /login HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [02/May/2019 12:35:27] "GET /admin HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [02/May/2019 12:35:39] "POST /admin HTTP/1.1" 302 -
 INFO:werkzeug:127.0.0.1 - - [02/May/2019 12:35:39] "GET /admin/location HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 580-919-724
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 15:44:51] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 15:44:51] "GET /static/login.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 15:44:52] "GET /static/CollegeDark.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 15:45:01] "GET /register HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 15:45:01] "GET /register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 15:45:01] "GET /register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 15:45:01] "GET /register?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 15:45:01] "GET /register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 15:45:31] "GET /register HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 15:45:31] "GET /register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 15:45:31] "GET /register?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 15:45:31] "GET /register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 15:45:31] "GET /register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 15:46:03] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 15:46:03] "GET /static/login.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 15:46:04] "GET /static/CollegeDark.jpg HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 15:47:30] "POST /register HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 15:47:30] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 15:47:44] "POST /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 15:47:44] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 15:47:45] "GET /static/posts/55e7744245b7885f.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 15:47:45] "GET /static/profile_pics/358165a67654886d.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 15:50:08] "GET /works HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 15:50:14] "GET /about HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 15:50:15] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 15:50:15] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 15:50:41] "GET /post/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 15:50:42] "GET /static/profile_pics/6352746dadbe48fe.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 15:52:17] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 15:52:17] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 15:52:23] "GET /post/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 15:52:23] "GET /static/profile_pics/6352746dadbe48fe.jpg HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 16:04:01] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 16:04:01] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 16:10:08] "GET /logout HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 16:10:08] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 16:10:10] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 16:11:42] "POST /register HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 16:11:42] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 16:11:54] "POST /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 16:11:54] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 16:11:56] "GET /posts/create HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 16:12:52] "POST /posts/create HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 16:12:52] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 16:12:52] "GET /static/profile_pics/d34c4cc88d726d9a.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 16:12:52] "GET /static/posts/3c55cffa30604c05.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 16:12:58] "GET /logout HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 16:12:58] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 16:13:08] "POST /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 16:13:08] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 16:13:11] "GET /post/2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 16:13:27] "POST /post/2 HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 16:13:27] "GET /post/2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 16:13:59] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 16:13:59] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 248-563-125
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 16:48:02] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 16:48:24] "GET / HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 16:48:24] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 16:48:57] "GET / HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 16:48:57] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 16:49:00] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 16:49:00] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 16:49:02] "GET /works HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 16:49:04] "GET /about HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 16:49:06] "GET /posts/create HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 16:49:35] "GET /post/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 16:49:39] "GET /post/2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 16:49:51] "GET /admin/location HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 16:50:07] "GET /post/2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 16:50:10] "GET /admin/location HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 16:50:12] "GET /admin/location/MC HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 16:50:12] "GET /static/posts/3c55cffa30604c05.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 16:50:35] "GET / HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 16:50:35] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 16:50:38] "GET /post/2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 16:51:32] "GET /post/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 16:53:32] "GET /admin/location/MB HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 16:55:51] "GET /posts/create HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 16:56:27] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 16:56:27] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 16:57:02] "GET /logout HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 16:57:02] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 16:57:17] "POST /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 16:57:17] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 16:57:20] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 16:57:21] "GET /static/posts/3c55cffa30604c05.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 16:57:21] "GET /static/posts/55e7744245b7885f.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 16:57:21] "GET /static/profile_pics/358165a67654886d.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 16:57:21] "GET /static/profile_pics/d34c4cc88d726d9a.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 16:57:30] "GET /posts/create HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 16:57:56] "GET /admin/location/MB HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 16:58:57] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 16:58:57] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 16:59:00] "GET /logout HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 16:59:00] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 16:59:09] "POST /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 16:59:10] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 16:59:18] "GET /posts/create HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 16:59:22] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 16:59:22] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 16:59:43] "GET /admin/location/MC HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:00:03] "GET /logout HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:00:03] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:00:13] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:00:32] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:02:38] "POST /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:02:38] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:03:29] "GET /posts/create HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:04:06] "POST /posts/create HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:04:06] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:04:06] "GET /static/posts/ba8cc58049019363.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:04:40] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:04:57] "GET /static/posts/ba8cc58049019363.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:04:57] "GET /static/posts/3c55cffa30604c05.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:04:57] "GET /static/profile_pics/6352746dadbe48fe.jpg HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:04:57] "GET /static/profile_pics/d34c4cc88d726d9a.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:04:57] "GET /static/posts/55e7744245b7885f.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:04:57] "GET /static/profile_pics/358165a67654886d.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:05:51] "GET /post/2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:05:59] "GET /logout HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:05:59] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:06:17] "GET /logout HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:06:17] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 257-413-727
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:13:47] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:13:49] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:14:31] "POST / HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:14:32] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:14:32] "GET /static/posts/ba8cc58049019363.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:14:32] "GET /static/profile_pics/d34c4cc88d726d9a.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:14:51] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:14:51] "GET /static/login.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:14:52] "GET /static/CollegeDark.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:15:28] "POST /admin HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:15:28] "GET /admin/location HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:15:30] "GET /admin/location HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:18:40] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:18:42] "GET /static/login.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:19:07] "GET /post/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:19:11] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:19:18] "GET / HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:19:18] "GET /admin/location HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:19:23] "GET /admin/location/BT HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:19:26] "GET /admin/location/EC HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:20:17] "GET /admin/location/MB HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:20:28] "GET /admin/location/MC HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:20:36] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:20:36] "GET /admin/location HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:20:40] "GET /admin/location/MC HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:20:45] "GET /works HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:21:47] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:21:47] "GET /admin/location HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:21:49] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:21:49] "GET /admin/location HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:28:44] "GET /logout HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:28:44] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:29:06] "POST /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:29:06] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:29:40] "GET /posts/create HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:30:24] "POST /posts/create HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:30:24] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:30:24] "GET /static/posts/925a08f616cf917c.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:30:42] "GET /admin/location HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:30:49] "GET / HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:30:49] "GET /admin/location HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:31:04] "GET /admin/location/MB HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:31:30] "GET /works HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:32:33] "POST /post/1/resolve HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:32:33] "GET /admin/location/MB HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:32:38] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:32:41] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:32:42] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:32:55] "GET /post/4 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:34:26] "GET /works HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:36:03] "GET /post/4/update HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:36:11] "POST /post/4/update HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:36:11] "GET /post/4 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:37:30] "GET /logout HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:37:30] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:37:37] "GET /logout HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 17:37:37] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 20:23:13] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 20:23:14] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 20:23:22] "POST / HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 20:23:22] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 20:23:27] "GET /post/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 20:23:35] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 20:23:35] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 20:24:59] "GET /works HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 20:24:59] "GET /about HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 20:25:00] "GET /posts/create HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 20:25:01] "GET /logout HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 20:25:01] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 20:25:10] "POST /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 20:25:10] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 20:25:14] "GET / HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 20:25:14] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 20:25:16] "GET /logout HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 20:25:16] "GET /login HTTP/1.1" 200 -
+ERROR:flask.app:Exception on /logout [GET]
+Traceback (most recent call last):
+  File "/home/elli0t/anaconda3/lib/python3.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/elli0t/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/elli0t/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/elli0t/anaconda3/lib/python3.7/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/elli0t/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/elli0t/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/elli0t/projects/dba_proj/cleanApp/routes.py", line 44, in logout
+    if current_user.actype=='student':
+  File "/home/elli0t/anaconda3/lib/python3.7/site-packages/werkzeug/local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+AttributeError: 'AnonymousUserMixin' object has no attribute 'actype'
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 20:25:18] "GET /logout HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 20:25:27] "GET /posts HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/May/2019 20:25:27] "GET /login?next=%2Fposts HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 224-417-729
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 09:23:52] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 09:23:52] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 09:23:52] "GET /static/login.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 09:23:53] "GET /static/CollegeDark.jpg HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 09:23:53] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 09:24:10] "POST / HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 09:24:10] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 09:24:10] "GET /static/posts/3c55cffa30604c05.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 09:24:10] "GET /static/posts/925a08f616cf917c.jpg HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 09:24:10] "GET /static/posts/ba8cc58049019363.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 09:24:10] "GET /static/profile_pics/6352746dadbe48fe.jpg HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 09:24:10] "GET /static/profile_pics/358165a67654886d.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 09:24:10] "GET /static/profile_pics/d34c4cc88d726d9a.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 09:24:10] "GET /static/posts/55e7744245b7885f.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 09:24:39] "GET /post/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 09:24:41] "GET /post/3/update HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 09:24:50] "POST /post/3/update HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 09:24:50] "GET /post/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 09:24:53] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 09:24:53] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 09:25:46] "GET /works HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 09:26:22] "GET /works HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 199-664-248
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 09:40:28] "GET / HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 09:40:29] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 09:40:30] "GET / HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 09:40:30] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 09:40:30] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 09:41:53] "GET /logout HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 09:41:54] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 222-361-570
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 21:02:14] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 21:02:14] "GET /static/login.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 21:02:15] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 21:02:15] "GET /static/CollegeDark.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 21:09:59] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 21:10:01] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 21:10:03] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 156-740-401
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:15:37] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:15:37] "GET /static/login.css HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:15:39] "GET /static/CollegeDark.jpg HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:15:40] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:15:47] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:16:27] "POST /login HTTP/1.1" 302 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:16:27] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:16:27] "GET /static/posts/925a08f616cf917c.jpg HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:16:27] "GET /static/posts/3c55cffa30604c05.png HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:16:27] "GET /static/posts/ba8cc58049019363.png HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:16:27] "GET /static/profile_pics/d34c4cc88d726d9a.png HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:16:27] "GET /static/posts/55e7744245b7885f.png HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:16:27] "GET /static/profile_pics/6352746dadbe48fe.jpg HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:16:27] "GET /static/profile_pics/358165a67654886d.png HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:16:33] "GET /post/4 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:16:37] "GET /post/4/update HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:16:43] "GET /logout HTTP/1.1" 302 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:16:43] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:17:17] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:17:24] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:17:24] "GET /static/login.css HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:17:25] "GET /static/CollegeDark.jpg HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:17:32] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:17:38] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:17:47] "GET /works HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:17:51] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:20:42] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:20:42] "GET /static/login.css HTTP/1.1" 304 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:20:43] "GET /static/CollegeDark.jpg HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 282-459-647
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:20:55] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:20:55] "GET /static/login.css HTTP/1.1" 304 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:20:55] "GET /static/CollegeDark.jpg HTTP/1.1" 304 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:20:58] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:20:58] "GET /static/login.css HTTP/1.1" 304 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:20:58] "GET /static/CollegeDark.jpg HTTP/1.1" 304 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:22:52] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:22:52] "GET /static/login.css HTTP/1.1" 304 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:22:52] "GET /static/CollegeDark.jpg HTTP/1.1" 304 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:23:07] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:23:07] "GET /static/login.css HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:23:08] "GET /static/CollegeDark.jpg HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:23:24] "POST / HTTP/1.1" 302 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:23:24] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:23:24] "GET /static/posts/925a08f616cf917c.jpg HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:23:24] "GET /static/posts/ba8cc58049019363.png HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:23:24] "GET /static/profile_pics/6352746dadbe48fe.jpg HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:23:24] "GET /static/profile_pics/d34c4cc88d726d9a.png HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:23:24] "GET /static/posts/3c55cffa30604c05.png HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:23:24] "GET /static/posts/55e7744245b7885f.png HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:23:24] "GET /static/profile_pics/358165a67654886d.png HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:23:33] "GET /post/1 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:23:44] "GET /post/4 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:24:00] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:24:00] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:24:01] "GET /static/posts/ba8cc58049019363.png HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:24:01] "GET /static/posts/3c55cffa30604c05.png HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:24:01] "GET /static/profile_pics/d34c4cc88d726d9a.png HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:24:10] "GET /posts/create HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:24:17] "GET /works HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:24:35] "GET /about HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:24:41] "GET /posts/create HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:24:56] "GET /about HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:24:58] "GET /posts/create HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:25:59] "POST /posts/create HTTP/1.1" 302 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:25:59] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:26:01] "GET /static/posts/8985d0b51e7000fb.jpg HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:26:01] "GET /static/profile_pics/6352746dadbe48fe.jpg HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:26:01] "GET /static/posts/ba8cc58049019363.png HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:26:01] "GET /static/posts/925a08f616cf917c.jpg HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:26:01] "GET /static/posts/3c55cffa30604c05.png HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:26:01] "GET /static/profile_pics/d34c4cc88d726d9a.png HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:26:01] "GET /static/posts/55e7744245b7885f.png HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:26:01] "GET /static/profile_pics/358165a67654886d.png HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:26:18] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:26:18] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:26:40] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:26:40] "GET /static/profile_pics/6352746dadbe48fe.jpg HTTP/1.1" 304 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:26:40] "GET /static/posts/8985d0b51e7000fb.jpg HTTP/1.1" 304 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:26:40] "GET /static/posts/ba8cc58049019363.png HTTP/1.1" 304 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:26:40] "GET /static/posts/925a08f616cf917c.jpg HTTP/1.1" 304 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:26:40] "GET /static/profile_pics/d34c4cc88d726d9a.png HTTP/1.1" 304 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:26:41] "GET /static/posts/55e7744245b7885f.png HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:26:41] "GET /static/posts/3c55cffa30604c05.png HTTP/1.1" 304 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:26:41] "GET /static/profile_pics/358165a67654886d.png HTTP/1.1" 304 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:27:22] "GET /logout HTTP/1.1" 302 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:27:22] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:27:23] "GET /static/login.css HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:27:23] "GET /static/CollegeDark.jpg HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:27:31] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:27:57] "POST /admin HTTP/1.1" 302 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:27:57] "GET /admin/location HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:28:02] "GET /admin/location/CV HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:28:13] "GET /admin/location HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:28:15] "GET /admin/location/LH HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:29:49] "GET /admin/location/LH HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:29:51] "GET /static/posts/925a08f616cf917c.jpg HTTP/1.1" 304 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:29:55] "GET /admin/location/LH HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:29:55] "GET /static/posts/925a08f616cf917c.jpg HTTP/1.1" 304 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:30:05] "GET /works HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:30:07] "GET /posts/create HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:30:12] "GET /logout HTTP/1.1" 302 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:30:12] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:30:22] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:30:57] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:30:57] "GET /static/login.css HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:30:59] "GET /static/CollegeDark.jpg HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:31:28] "POST /admin HTTP/1.1" 302 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:31:28] "GET /admin/location HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:31:33] "GET /admin/location/CV HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:31:33] "GET /static/posts/ba8cc58049019363.png HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:31:33] "GET /static/posts/8985d0b51e7000fb.jpg HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:32:11] "GET /admin/location/CV HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:32:11] "GET /static/posts/ba8cc58049019363.png HTTP/1.1" 304 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:32:11] "GET /static/posts/8985d0b51e7000fb.jpg HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 21:32:35] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 21:32:35] "GET /static/login.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 21:32:36] "GET /static/CollegeDark.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 21:32:37] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 21:32:39] "GET /amin HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 21:32:43] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 21:32:50] "POST /admin HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 21:32:50] "GET /admin/location HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 21:32:54] "GET /admin/location/CV HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 21:32:54] "GET /static/posts/ba8cc58049019363.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 21:32:54] "GET /static/posts/8985d0b51e7000fb.jpg HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:33:04] "GET /post/3 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:33:04] "GET /static/profile_pics/6352746dadbe48fe.jpg HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:33:08] "POST /post/3/delete HTTP/1.1" 302 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:33:08] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:33:08] "GET /static/posts/925a08f616cf917c.jpg HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:33:09] "GET /static/posts/3c55cffa30604c05.png HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:33:09] "GET /static/profile_pics/d34c4cc88d726d9a.png HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:33:09] "GET /static/posts/55e7744245b7885f.png HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:33:09] "GET /static/profile_pics/358165a67654886d.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/elli0t/projects/dba_proj/cleanApp/routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 140-503-932
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:34:35] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:34:38] "GET /static/posts/8985d0b51e7000fb.jpg HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:34:38] "GET /static/posts/3c55cffa30604c05.png HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:34:38] "GET /static/profile_pics/6352746dadbe48fe.jpg HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:34:38] "GET /static/posts/925a08f616cf917c.jpg HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:34:38] "GET /static/profile_pics/d34c4cc88d726d9a.png HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:34:38] "GET /static/posts/55e7744245b7885f.png HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:34:38] "GET /static/profile_pics/358165a67654886d.png HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:34:43] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:34:43] "GET /admin/location HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:34:45] "GET /admin/location/CV HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 21:35:50] "GET /admin/location/CV HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:35:58] "GET /admin/location/CV HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:35:59] "GET /static/posts/8985d0b51e7000fb.jpg HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:36:08] "GET /post/5 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:36:13] "POST /post/5/delete HTTP/1.1" 302 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:36:13] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/elli0t/projects/dba_proj/cleanApp/routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 763-444-122
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:38:57] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:39:00] "GET /static/posts/925a08f616cf917c.jpg HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:39:00] "GET /static/profile_pics/6352746dadbe48fe.jpg HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:39:00] "GET /static/posts/3c55cffa30604c05.png HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:39:00] "GET /static/profile_pics/358165a67654886d.png HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:39:00] "GET /static/profile_pics/d34c4cc88d726d9a.png HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:39:00] "GET /static/posts/55e7744245b7885f.png HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:39:01] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:39:01] "GET /admin/location HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:39:08] "GET /admin/location/MC HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:39:18] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:39:18] "GET /admin/location HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:39:24] "GET /admin/location/LH HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:39:28] "GET /logout HTTP/1.1" 302 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:39:28] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:39:28] "GET /static/login.css HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 21:39:29] "GET /static/CollegeDark.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 21:39:39] "GET /post/5 HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 21:39:42] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 21:39:42] "GET /admin/location HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 21:39:43] "GET /admin/location/MC HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 21:39:43] "GET /static/posts/3c55cffa30604c05.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 21:39:44] "GET /post/2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 21:39:44] "GET /static/profile_pics/6352746dadbe48fe.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 21:39:44] "GET /static/profile_pics/d34c4cc88d726d9a.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 21:39:47] "POST /post/2/delete HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 21:39:47] "GET /admin/location/MC HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 21:39:50] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 21:39:50] "GET /admin/location HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 21:39:52] "GET /admin/location/LH HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 21:39:52] "GET /static/posts/925a08f616cf917c.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 21:39:56] "POST /post/4/resolve HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 21:39:56] "GET /admin/location/LH HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 21:39:59] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 21:39:59] "GET /admin/location HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 21:40:01] "GET /logout HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 21:40:01] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 161-962-716
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 22:19:23] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 22:19:23] "GET /static/login.css HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 22:19:25] "GET /static/CollegeDark.jpg HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 22:19:25] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 22:19:27] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 22:19:46] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 22:19:46] "GET /static/login.css HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 22:19:47] "GET /static/CollegeDark.jpg HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 22:20:26] "POST / HTTP/1.1" 302 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 22:20:26] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 22:20:26] "GET /static/posts/925a08f616cf917c.jpg HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 22:20:26] "GET /static/profile_pics/6352746dadbe48fe.jpg HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 22:20:26] "GET /static/profile_pics/358165a67654886d.png HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 22:20:26] "GET /static/posts/55e7744245b7885f.png HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 22:20:56] "GET /works HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 22:21:08] "GET /about HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 22:21:12] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 22:21:12] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 22:21:17] "GET /posts/create HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 22:22:12] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 22:22:15] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 22:22:17] "GET /logout HTTP/1.1" 302 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 22:22:17] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 22:22:19] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 22:22:27] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 22:22:50] "POST /admin HTTP/1.1" 500 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 22:22:50] "GET /admin?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 22:22:50] "GET /admin?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 22:22:50] "GET /admin?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 22:22:50] "GET /admin?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 22:22:51] "GET /admin?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [04/May/2019 22:22:51] "GET /admin?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 183-595-917
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 22:25:04] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 22:25:05] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 22:25:14] "POST /admin HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 22:25:14] "GET /admin/location HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 22:25:17] "GET /admin/location/AC HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 22:25:19] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 22:25:20] "GET /admin/location HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 22:25:24] "GET /admin/location/MB HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 22:25:24] "GET /static/posts/55e7744245b7885f.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 22:25:25] "GET /post/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 22:25:25] "GET /static/profile_pics/358165a67654886d.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 22:25:30] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/May/2019 22:26:37] "GET /admin/location/MB HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 172-239-518
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 317-498-880
+INFO:werkzeug:192.168.1.4 - - [05/May/2019 12:03:26] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [05/May/2019 12:03:26] "GET /static/login.css HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [05/May/2019 12:03:28] "GET /static/CollegeDark.jpg HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [05/May/2019 12:03:28] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug:192.168.1.4 - - [05/May/2019 12:03:53] "GET /about HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [05/May/2019 12:04:05] "GET /works HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [05/May/2019 12:04:08] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.4 - - [05/May/2019 12:04:23] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 190-391-306
+INFO:werkzeug:127.0.0.1 - - [05/May/2019 19:00:39] "GET / HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [05/May/2019 19:00:40] "GET /admin/location HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/May/2019 19:00:41] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [05/May/2019 19:00:44] "GET /logout HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [05/May/2019 19:00:44] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/May/2019 19:00:44] "GET /static/login.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [05/May/2019 19:00:44] "GET /static/CollegeDark.jpg HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [05/May/2019 19:00:48] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/May/2019 19:00:58] "POST /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [05/May/2019 19:00:58] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/May/2019 19:00:58] "GET /static/posts/925a08f616cf917c.jpg HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [05/May/2019 19:00:58] "GET /static/profile_pics/6352746dadbe48fe.jpg HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [05/May/2019 19:00:58] "GET /static/posts/55e7744245b7885f.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [05/May/2019 19:00:58] "GET /static/profile_pics/358165a67654886d.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [05/May/2019 19:01:06] "GET /posts/create HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/May/2019 19:01:49] "GET /posts/create HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/May/2019 19:02:42] "GET /posts/create HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/May/2019 19:03:10] "GET /posts/create HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/elli0t/projects/dba_proj/cleanApp/forms.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 914-329-620
+INFO:werkzeug:127.0.0.1 - - [05/May/2019 19:04:29] "GET /logout HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [05/May/2019 19:04:29] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/May/2019 19:04:30] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/elli0t/projects/dba_proj/cleanApp/forms.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 194-635-250
+INFO:werkzeug:127.0.0.1 - - [05/May/2019 19:04:52] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/May/2019 19:04:53] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/elli0t/projects/dba_proj/cleanApp/forms.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 514-988-027
+INFO:werkzeug:127.0.0.1 - - [05/May/2019 19:05:08] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/elli0t/projects/dba_proj/cleanApp/forms.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 311-347-622
+INFO:werkzeug:127.0.0.1 - - [05/May/2019 19:05:33] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/elli0t/projects/dba_proj/cleanApp/forms.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 166-065-688
+INFO:werkzeug:127.0.0.1 - - [05/May/2019 19:05:51] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/elli0t/projects/dba_proj/cleanApp/forms.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 210-868-352
+INFO:werkzeug:127.0.0.1 - - [05/May/2019 19:06:00] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/May/2019 19:06:01] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/elli0t/projects/dba_proj/cleanApp/forms.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 229-737-097
+INFO:werkzeug:127.0.0.1 - - [05/May/2019 19:09:50] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/May/2019 19:10:42] "POST /register HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [05/May/2019 19:10:42] "GET /register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/May/2019 19:10:42] "GET /register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/May/2019 19:10:42] "GET /register?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/May/2019 19:10:42] "GET /register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/May/2019 19:10:42] "GET /register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/elli0t/projects/dba_proj/cleanApp/forms.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 128-637-981
+INFO:werkzeug:127.0.0.1 - - [05/May/2019 19:11:28] "POST /register HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [05/May/2019 19:11:28] "GET /register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/May/2019 19:11:28] "GET /register?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/May/2019 19:11:28] "GET /register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/May/2019 19:11:28] "GET /register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/May/2019 19:11:28] "GET /register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/elli0t/projects/dba_proj/cleanApp/models.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 346-027-256
+INFO:werkzeug:127.0.0.1 - - [05/May/2019 19:13:01] "POST /register HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [05/May/2019 19:13:01] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/May/2019 19:15:23] "POST /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [05/May/2019 19:15:23] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/May/2019 19:15:28] "GET /logout HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [05/May/2019 19:15:28] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 131-797-664
+INFO:werkzeug: * Detected change in '/home/elli0t/projects/dba_proj/cleanApp/__init__.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 877-307-657
+INFO:werkzeug: * Detected change in '/home/elli0t/projects/dba_proj/cleanApp/__init__.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 133-314-547
+INFO:werkzeug:127.0.0.1 - - [05/May/2019 21:51:25] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/May/2019 21:51:26] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [05/May/2019 21:51:28] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/May/2019 21:52:40] "POST /register HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [05/May/2019 21:52:40] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/May/2019 21:53:34] "POST /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [05/May/2019 21:53:34] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/May/2019 21:53:36] "GET /posts/create HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/May/2019 21:54:02] "POST /posts/create HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [05/May/2019 21:54:02] "GET /posts/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/May/2019 21:54:02] "GET /posts/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/May/2019 21:54:02] "GET /posts/create?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/May/2019 21:54:02] "GET /posts/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/May/2019 21:54:02] "GET /posts/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/May/2019 21:55:12] "GET /posts/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/May/2019 21:58:13] "POST /posts/create HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [05/May/2019 21:58:13] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/May/2019 21:58:13] "GET /static/posts/0ebd1fd781d86757.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/May/2019 21:58:13] "GET /static/profile_pics/d36a3937fe273020.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/May/2019 21:58:15] "GET /post/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/May/2019 21:58:18] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/elli0t/projects/dba_proj/cleanApp/models.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 104-680-546
+INFO:werkzeug:127.0.0.1 - - [05/May/2019 22:01:04] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/May/2019 22:01:06] "GET /posts/create HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/May/2019 22:01:18] "POST /posts/create HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [05/May/2019 22:01:18] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/May/2019 22:01:18] "GET /static/posts/bcf00fd49097183e.jpg HTTP/1.1" 200 -

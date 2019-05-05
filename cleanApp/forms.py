@@ -37,7 +37,7 @@ class registerForm(FlaskForm):
                                          ('EC', 'E and C'), ('EE', 'E and E'), ('AC', 'Architecture')
                                          , ('AR', 'A and R')])
     
-    sem = SelectField('Semester', choices = [('1','1'),('2','2'),('3','3'),('4','4'),('5','5'),('6','6'),('7','7'),('8','8')])
+    sem = SelectField('Semester', choices = [('1','1'),('2','2'),('3','3'),('4','4'),('5','5'),('6','6'),('7','7'),('8','8'),('9','9 (Arch)'),('10','10 (Arch)')])
 
     phone = StringField('Phone no.', validators=[DataRequired(), Length(min=10, max=10)])
 
@@ -57,6 +57,10 @@ class registerForm(FlaskForm):
         user = User.query.filter_by(usn = usn.data.lower()).first()
         if user:
             raise ValidationError('That USN is already taken. please contact us if it is yours.')
+
+    def validate_sem(self,sem):
+        if((sem=='9' or sem=='10') and not(self.branch=='AC')):
+            raise ValidationError('9th and 10th sem are only for architecture')
 
 
 class postForm(FlaskForm):

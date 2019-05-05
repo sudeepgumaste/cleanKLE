@@ -9,7 +9,7 @@ def load_user(username):
 
 class User(db.Model,UserMixin):
     id = db.Column(db.Integer, primary_key = True)
-    profile_pic = db.Column(db.String(30), unique = True, nullable = False, default = "default.jpg")
+    profile_pic = db.Column(db.String(30), nullable = False, default = "default.jpg")
     usn = db.Column(db.String(12), unique = True, default=None)
     username = db.Column(db.String(20), unique = True, nullable = False)
     email = db.Column(db.String(120), unique = True, nullable = True, default=None)
@@ -28,7 +28,7 @@ class User(db.Model,UserMixin):
 class Post(db.Model):
     id = db.Column(db.Integer, primary_key = True)
     title = db.Column(db.String(100), nullable = False)
-    date_posted = db.Column( db.String(20), nullable = False, default = str(datetime.now()))
+    date_posted = db.Column( db.String(19), nullable = False, default = str(datetime.now())[:19])
     content = db.Column(db.Text, nullable = False)
     location = db.Column(db.String(15), nullable=False,)
     severity= db.Column(db.String(1), nullable=False)
