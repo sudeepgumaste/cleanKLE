@@ -1623,3 +1623,14 @@ INFO:werkzeug:127.0.0.1 - - [11/May/2019 11:15:13] "GET /static/KLE-Tech-logo-in
 INFO:werkzeug:127.0.0.1 - - [11/May/2019 11:15:13] "GET /static/posts/55e7744245b7885f.png HTTP/1.1" 404 -
 INFO:werkzeug:127.0.0.1 - - [11/May/2019 11:16:01] "GET /logout HTTP/1.1" 302 -
 INFO:werkzeug:127.0.0.1 - - [11/May/2019 11:16:01] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 224-236-936
+INFO:werkzeug:127.0.0.1 - - [11/May/2019 11:56:40] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/May/2019 11:56:41] "GET /static/login.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/May/2019 11:56:41] "GET /static/CollegeDark.jpg HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/May/2019 11:56:42] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [11/May/2019 11:56:43] "GET /works HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/May/2019 11:56:43] "GET /static/KLE-Tech-logo-inv.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/May/2019 11:56:43] "GET /static/footer.css HTTP/1.1" 404 -
