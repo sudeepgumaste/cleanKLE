@@ -210,7 +210,6 @@ def admin():
     if form.validate_on_submit():
         user = User.query.filter_by(username=form.username.data).first()
         if user and bcrypt.check_password_hash(user.password, form.password.data):
-            print(True)
             login_user(user,remember=True)
             flash(f'logged in as {user.username}','success')
             return redirect(url_for('location')) 
@@ -222,7 +221,7 @@ def admin():
 @login_required
 def location():
     if current_user.actype=='student':
-        abort(403)
+        return redirect('posts')
     locs = [['MB','Main Building'],['ME','Mechanical Building'],['CV','Civil Department'],
             ['MC','Main Canteen'],['EC', 'E and C Building'],['CL','C-Lite'],['LH','LHC Area'],
             ['AC','Architecture'],['BT','Bio Tech Building']]

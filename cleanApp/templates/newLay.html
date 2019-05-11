@@ -5,4 +5,81 @@
         {% block desc %}{% endblock desc %}    
     </div>
 </div>
+<div class="footer">
+    <nav class="navbar" style="background: #303952">
+        <div class="container p-3" style="background:none;">
+            <div class="row justify-content-around mb-5">
+                <div class="col-md-4 d-none d-md-block">
+                    <ul>
+                        <li><a href="{{url_for('posts')}}">Home</a></li>
+                        <li><a href="{{url_for('about')}}">About Us</a></li>
+                        <li><a href="{{url_for('works')}}">What's it for</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-5 d-none d-md-block">
+                    <div class="menu2 ">
+                        <h3 style="color:white">CONTACT US</h3>
+                        <p class="lead">Gaara- sudeepgumaste19@protonmail.com</p>
+                        <p class="lead">Vettel- sushantm47@gmail.com</p>
+                        <p class="lead">Gilfoyl- </p>
+                        <p class="h3">FOLLOW US</p><br>    
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-md-2 mb-2">
+                                <li><a href="#"><i class="fab fa-facebook-square fa-2x"><small class="d-md-none ml-2">Facebook</small></i></a></li>
+                            </div>
+                            <div class="col-md-2 mb-2">
+                                <li><a href="#"><i class="fab fa-instagram fa-2x"><small class="d-md-none ml-2">Instagram</small></i></a></li>
+                            </div>
+                            <div class="col-md-2">
+                                <li><a href="#"><i class="fab fa-youtube-square fa-2x"><small class="d-md-none ml-2">Youtube</small></i></a></li>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-md-4 mb-5">
+					<div class="menu3">
+					    <img src="../static/KLE-Tech-logo-inv.png">
+					    <p class="lead">KLE Technological University Act – 2012; Karnataka Act 22 of 2013 B. V. Bhoomaraddi Campus, Vidyanagar, Hubballi (India)
+					    </p>
+					</div>
+				</div>
+            </div>
+        </div>
+    </nav>
+</div>
+<nav class="navbar footer-bottom">
+    <div class="container justify-content-center">
+        <p class="align-self-center pt-3 lead">Designed by Gaara and Vettel</p>
+    </div>
+</nav>
+<style>
+    .footer{
+        font: 'Roboto Slab';
+    }
+    .footer li{
+        list-style: none;
+    }
+    .footer img{
+        width: 100;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .footer a{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        display: block;
+    }
+    .footer p{
+        color: white;
+    }
+    
+
+    .footer-bottom{
+        margin: 0;
+        padding: 0;
+        background: #1f2535;
+        color: #fff;
+    }
+</style>
 {% endblock content %}

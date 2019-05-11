@@ -4,7 +4,7 @@
         <div class="jumbotron bg-light shadow pt-3 mt-5 mb-5">
             <h3 class="text-center border-bottom pb-3">Departments</h3>
             {% for loc_code,loc_name,count in locs %}
-                <a href="{{ url_for('panel',loc_name=loc_code)}}" class="btn btn-outline-info btn-lg btn-block">{{loc_name}} [{{count}}]</a>
+                <a href="{{ url_for('panel',loc_name=loc_code)}}" class="btn btn-outline-info btn-lg btn-block">{{loc_name}} <span class="badge badge-info">{{count}}</span></a>
             {% endfor %}
         </div>
     </div>

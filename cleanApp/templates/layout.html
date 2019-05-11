@@ -21,6 +21,9 @@
         {% if title=='Login' or title == 'Register' or title=="Admin" %}
         <!--Custom CSS-->
             <link rel="stylesheet" type="text/css" href="../static/login.css">
+        {% else %}
+        <!--Custom CSS for footer-->
+            <link rel="stylesheet" type="text/css" href="../static/footer.css">            
         {% endif %}
 
         {% if title %}
@@ -91,7 +94,7 @@
         {% if messages %}
             {% for category,message in messages %}
                 <div class="container">
-                    <div class="alert alert-{{ category }} text-center mt-2">
+                    <div class="alert alert-{{ category }} text-center mt-2 mb-2">
                         {{ message }}
                     </div>
                 </div>
