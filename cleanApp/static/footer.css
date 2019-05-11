@@ -1,0 +1,28 @@
+    .footer{
+        font: 'Roboto Slab';
+    }
+    .footer li{
+        list-style: none;
+    }
+    .footer img{
+        width: 100;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .footer a{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        display: block;
+    }
+    .footer p{
+        color: white;
+    }
+    
+
+    .footer-bottom{
+        margin: 0;
+        padding: 0;
+        background: #1f2535;
+        color: #fff;
+    }

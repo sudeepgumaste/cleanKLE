@@ -1623,3 +1623,7 @@ INFO:werkzeug:127.0.0.1 - - [11/May/2019 11:15:13] "GET /static/KLE-Tech-logo-in
 INFO:werkzeug:127.0.0.1 - - [11/May/2019 11:15:13] "GET /static/posts/55e7744245b7885f.png HTTP/1.1" 404 -
 INFO:werkzeug:127.0.0.1 - - [11/May/2019 11:16:01] "GET /logout HTTP/1.1" 302 -
 INFO:werkzeug:127.0.0.1 - - [11/May/2019 11:16:01] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 124-023-163
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
