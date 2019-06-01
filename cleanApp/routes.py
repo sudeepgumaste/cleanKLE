@@ -71,6 +71,12 @@ def register():
         return redirect(url_for('login'))
     return render_template("register.html",title="Register", form=form)
 
+
+@app.route("/account")
+def account():
+    form = registerForm()
+    return render_template('account.html',form = form)
+
 #end of authentication routes
 #All post related routes
 

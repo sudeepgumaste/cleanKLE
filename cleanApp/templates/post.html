@@ -103,9 +103,9 @@
             </div>
         </form>
         {% for comment in comments %}
-        <div class="comment mt-3 ml-3">
-            <h4 class="text-muted"><img class="mr-2 rounded-circle" src="{{url_for('static', filename='profile_pics/'+comment.quoter.profile_pic)}}"  alt="404" style="max-width: 100%; max-height:100% ; height:45px; width:45px">{{comment.quoter.username}}</h4>
-            <p class="ml-5 pr-5">{{comment.comment}}</p>
+        <div class="comment mt-3">
+            <h4 class="text-muted mb-0"><img class="mr-1 rounded-circle" src="{{url_for('static', filename='profile_pics/'+comment.quoter.profile_pic)}}"  alt="404" style="max-width: 100%; max-height:100% ; height:45px; width:45px">{{comment.quoter.username}}</h4>
+            <p class="ml-5 pt-0 pr-5 pl-1">{{comment.comment}}</p>
         </div>
         {% endfor %}
     </div>
