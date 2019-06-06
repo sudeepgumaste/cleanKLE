@@ -71,14 +71,21 @@
                             <li class="nav-item">
                                 <a href="{{ url_for('newPost') }}" class="nav-link">New Post</a>
                             </li>
-                        {% else %}
-                            <li class="nav-item">
-                                <a href="{{ url_for('newPost') }}" class="nav-link">New Post</a>
-                            </li>
                         {% endif %}
-
-                        <li class="nav-item">
+                        <li class="nav-item d-md-none">
+                            <a href="{{ url_for('account') }}" class="nav-link">Account</a>
+                        </li>
+                        <li class="nav-item d-md-none">
                             <a href="{{ url_for('logout') }}" class="nav-link">Logout</a>
+                        </li>
+                        <li class="d-none d-md-block">
+                            <div class="dropdown">
+                                <button class="btn btn-link nav-link dropdown-toggle" data-toggle="dropdown">Account</button>
+                                <div class="dropdown-menu shadow-sm bg-light">
+                                    <a href="{{ url_for('account') }}" class="dropdown-item">Settings</a>
+                                    <a href="{{ url_for('logout') }}" class="dropdown-item">Logout</a>
+                                </div>
+                            </div>
                         </li>
                     {% endif %}
                     {% if current_user.is_authenticated==false and title=='Register'%}

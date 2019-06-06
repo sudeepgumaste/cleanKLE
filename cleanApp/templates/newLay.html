@@ -5,52 +5,69 @@
         {% block desc %}{% endblock desc %}    
     </div>
 </div>
-<div class="footer">
-    <nav class="navbar" style="background: #303952">
-        <div class="container p-3" style="background:none;">
-            <div class="row justify-content-around mb-5">
-                <div class="col-md-3 d-none d-md-block">
+<div class="footer p-3" style="background: #303952">
+    <div class="container p-3" >
+        <div class="row">
+            <div class="col-lg-3 col-md-3">
+                    <img src="../static/KLE-Tech-logo-inv.png">
+            </div>
+            <div class="col-lg-3 col-md-3">
+                    <p class="h3 pb-2 pt-3 heading" style="border-top:3px solid grey;">LINKS</p>
                     <ul style="list-style:none; padding-left:0px;">
-                        <li ><a href="{{url_for('posts')}}" >Home</a></li>
-                        <li ><a href="{{url_for('about')}}" >About Us</a></li>
-                        <li ><a href="{{url_for('works')}}" >What's it for</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-6 mb-5 d-none d-md-block">
-                    <div class="menu2 ">
-                        <h3 style="color:white">CONTACT US</h3>
-                      <div class="img-thumbnail" style=" background-color:rgba(0,0,0,0); border:none;">  <p class="lead">Gaara- sudeepgumaste19@protonmail.com</p></div>
-                      <div class="img-thumbnail" style=" background-color:rgba(0,0,0,0); border:none;">  <p class="lead">Vettel- sushmudalgi25@gmail.com</p></div>
-                      <div class="img-thumbnail" style=" background-color:rgba(0,0,0,0); border:none;">  <p class="lead">Gilfoyl- </p></div>
-                        <p class="h3">FOLLOW US</p><br>    
+                            <li ><a href="{{url_for('posts')}}" >Home</a></li>
+                            <li ><a href="{{url_for('about')}}" >About Us</a></li>
+                            <li ><a href="{{url_for('works')}}" >What's it for</a></li>
+                    </ul>   
+            </div>
+            <div class="col-lg-4 col-md-3 ">
+                    <p class="h3 pb-2 pt-3 heading" style="border-top:3px solid grey;">REACH US</p>
+                    <ul style="list-style:none; padding-left:0px;">
+                            <li ><a href="#" >Gaara- sudeepgumaste19@protonmail.com</a></li>
+                            <li ><a href="#" >Vettel- sushmudalgi25@gmail.com</a></li>
+                            <li ><a href="#" >Gilfoyl- </a></li>
+                    </ul>   
+            </div>
+            <div class="col-lg-2 col-md-3">
+                    <p class="h3 pb-2 pt-3 heading" style="border-top:3px solid grey;">SOCIAL</p>    
                         <div class="row d-flex justify-content-right">
-                            <div class="col-md-2 mb-2">
+                            <div class="col-md-2 mr-2 ">
                                 <li><a href="#"><i class="fab fa-facebook-square fa-2x"><small class="d-md-none ml-2">Facebook</small></i></a></li>
                             </div>
-                            <div class="col-md-2 mb-2">
+                            <div class="col-md-2 mr-2">
                                 <li><a href="#"><i class="fab fa-instagram fa-2x"><small class="d-md-none ml-2">Instagram</small></i></a></li>
                             </div>
-                            <div class="col-md-2">
+                            <div class="col-md-2 mr-2 ">
                                 <li><a href="#"><i class="fab fa-youtube-square fa-2x"><small class="d-md-none ml-2">Youtube</small></i></a></li>
                             </div>
-                        </div>
                     </div>
-                </div> 
-                <div class="col-md-3 mb-5">
-					<div class="menu3">
-					    <img src="../static/KLE-Tech-logo-inv.png">
-					    <p class="lead">KLE Technological University Act – 2012; Karnataka Act 22 of 2013 B. V. Bhoomaraddi Campus, Vidyanagar, Hubballi (India)
-					    </p>
-					</div>
-				</div>
             </div>
+            
         </div>
-    </nav>
-</div>
+    </div>
+</div>      
 <nav class="navbar footer-bottom">
     <div class="container justify-content-center">
-        <p class="align-self-center pt-3 lead">Designed by Gaara and Vettel</p>
+        <p class="align-self-center pt-2 lead">Designed by Gaara and Vettel</p>
     </div>
 </nav>
+<style>
+    .footer li a{
+        font-size:13px;
+    }
+    .footer P{
+        font-size:13px;
+    }
+    .footer h5{
+        font-size:px;
+        font-style: impact;
+        font-weight:300;
+        margin-bottom:20px; 
+    }
+    .footer .heading{
+        font-weight: 500;
+        font-style: impact;
+        font-size: 15px;
+    }
+</style>
 
 {% endblock content %}
