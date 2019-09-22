@@ -1,3 +1,5 @@
 .vscode
 ./cleanApp/static/profile_pics/*
 ./cleanApp/__pycache__/*
+*.pyc
+./cleanApp/static/posts/*
