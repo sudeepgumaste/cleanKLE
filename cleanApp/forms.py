@@ -96,6 +96,10 @@ class updateForm(FlaskForm):
 
     submit = SubmitField('Post')
 
+class adminCommentForm(FlaskForm):
+    admin_comment = StringField('admin_comment',validators=[DataRequired()])
+    submit = SubmitField('Submit')
+
 class commentForm(FlaskForm):
     comment = StringField('comment', validators=[DataRequired()])
     submit = SubmitField('Comment')

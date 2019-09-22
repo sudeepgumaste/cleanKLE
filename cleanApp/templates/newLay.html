@@ -9,7 +9,7 @@
     <div class="container p-3" >
         <div class="row">
             <div class="col-lg-3 col-md-3">
-                    <img src="../static/KLE-Tech-logo-inv.png">
+                <img src="{{url_for('static', filename='KLE-Tech-logo-inv.png')}}" >
             </div>
             <div class="col-lg-3 col-md-3">
                     <p class="h3 pb-2 pt-3 heading" style="border-top:3px solid grey;">LINKS</p>
@@ -51,23 +51,34 @@
     </div>
 </nav>
 <style>
-    .footer li a{
-        font-size:13px;
+    .footer{
+        font: 'Roboto Slab';
     }
-    .footer P{
-        font-size:13px;
+    .footer li{
+        list-style: none;
     }
-    .footer h5{
-        font-size:px;
-        font-style: impact;
-        font-weight:300;
-        margin-bottom:20px; 
+    .footer img{
+        width: 100;
+        max-width: 100%;
+        max-height: 100%;
     }
-    .footer .heading{
-        font-weight: 500;
-        font-style: impact;
-        font-size: 15px;
+    .footer a{
+        text-decoration: none;
+        color: white;
+        font-size: 13px;
+        display: block;
     }
-</style>
+    .footer p{
+        color: white;
+    }
+    
+    
+    .footer-bottom{
+        margin: 0;
+        padding: 0;
+        background: #1f2535;
+        color: #fff;
+    }
 
+</style>
 {% endblock content %}

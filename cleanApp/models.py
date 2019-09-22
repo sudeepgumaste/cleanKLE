@@ -35,6 +35,7 @@ class Post(db.Model):
     image_file = db.Column(db.String(30), nullable = False, default = 'default.jpg')
     resolved = db.Column(db.Boolean, default=False, nullable=False)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable = False)
+    admin_comment = db.Column(db.String(100),nullable=False, default = '')
     comments_all = db.relationship('Comments', backref = 'quote_on', lazy = True)
 
     def __repr__(self):
@@ -42,7 +43,7 @@ class Post(db.Model):
 
 class Comments(db.Model):
     id = db.Column(db.Integer, primary_key = True)
-    comment = db.Column(db.String(50),nullable=False)
+    comment = db.Column(db.String(150),nullable=False)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable = False)
     post_id = db.Column(db.Integer, db.ForeignKey('post.id'), nullable = False)
     

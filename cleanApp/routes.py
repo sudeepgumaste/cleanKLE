@@ -1,7 +1,7 @@
 from cleanApp import app, db, bcrypt
 from flask import render_template, abort, request
 from flask import url_for, flash, redirect
-from cleanApp.forms import loginForm,registerForm,adminLoginForm, postForm, updateForm, commentForm
+from cleanApp.forms import loginForm,registerForm,adminLoginForm, postForm, updateForm, commentForm, adminCommentForm
 from flask_login import login_user,current_user, logout_user, login_required
 from cleanApp.models import User, Post, Comments
 from cleanApp.email import Mail
@@ -130,6 +130,7 @@ def newPost():
 @app.route("/post/<int:post_id>" , methods = ['GET', 'POST'])
 def iso_post(post_id):
     post = Post.query.get_or_404(post_id)
+    adminForm = adminCommentForm()
     form = commentForm()
     comments = Comments.query.filter_by(post_id = post.id)
     if form.validate_on_submit():
@@ -140,7 +141,13 @@ def iso_post(post_id):
         mail.send()
         flash('Comment successfully added', 'success')
         return redirect(url_for('iso_post', post_id=post.id))
-    return render_template('post.html', title=post.title, post=post, form=form, comments = comments)
+    
+    if adminForm.validate_on_submit():
+        post.admin_comment = adminForm.admin_comment.data
+        db.session.commit()
+
+    return render_template('post.html', title=post.title, post=post,adminForm=adminForm, form=form, comments = comments)
+
 
 @app.route("/post/<int:post_id>/update", methods=['GET', 'POST'])
 @login_required

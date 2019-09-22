@@ -73,6 +73,35 @@
                             unresolved
                         {% endif %}
                     </h3>
+                    {% if current_user.actype=='admin' %}
+                        <form action="" method="POST">
+                            {{ adminForm.hidden_tag() }}
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div class="form-group">
+                                        {% if adminForm.admin_comment.errors %}
+                                            {{ adminForm.admin_comment(class="form-control", placeholder="Add an admin response") }}
+                                            <div class="invalid-feedback">
+                                                {% for error in adminForm.admin_comment.errors %}
+                                                    <span>{{ error }}</span>
+                                                {% endfor %}
+                                                </div>
+                                            {% else %}
+                                                {{ adminForm.admin_comment(class="form-control", placeholder="Add an admin response") }}
+                                            {% endif %}
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    {{ adminForm.submit(class="btn btn-info btn-block mb-3") }}
+                                </div>
+                            </div>
+                        </form>
+                    {% endif %}
+                    <h3>
+                        {% if post.admin_comment %}
+                            Admin response : {{ post.admin_comment }}
+                        {% endif %}
+                    </h3>
                     <p class="lead">{{post.content}}</p>
                     <div class="w-100"></div>
                     <div class="col"></div>

@@ -21,10 +21,8 @@
         {% if title=='Login' or title == 'Register' or title=="Admin" %}
         <!--Custom CSS-->
             <link rel="stylesheet" type="text/css" href="../static/login.css">
-        {% else %}
-        <!--Custom CSS for footer-->
-            <link rel="stylesheet" type="text/css" href="../static/footer.css">            
         {% endif %}
+        <link rel="stylesheet" type="text/css" href="../static/footer.css">            
 
         {% if title %}
         <title>{{title}}</title>

@@ -2048,3 +2048,962 @@ INFO:werkzeug:127.0.0.1 - - [06/Jun/2019 20:54:30] "GET /static/posts/7c3fe1543a
 INFO:werkzeug:127.0.0.1 - - [06/Jun/2019 20:54:30] "GET /static/profile_pics/d9917c9e44364ef9.png HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [06/Jun/2019 20:54:30] "GET /static/KLE-Tech-logo-inv.png HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [06/Jun/2019 20:54:37] "GET /account HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 304-648-980
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 09:58:37] "GET / HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 09:58:37] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 09:58:38] "GET /static/footer.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 09:58:39] "GET /static/posts/382c0d365a085d3b.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 09:58:39] "GET /static/profile_pics/3a555024dcae85ed.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 09:58:39] "GET /static/profile_pics/d9917c9e44364ef9.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 09:58:39] "GET /static/posts/7c3fe1543abaade1.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 09:58:39] "GET /static/KLE-Tech-logo-inv.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 09:58:40] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 09:59:51] "GET /post/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 10:00:17] "POST /post/1 HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 10:00:17] "GET /post/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 10:00:50] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 10:00:50] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 10:00:58] "GET /works HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 10:01:00] "GET /about HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 10:01:14] "GET /logout HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 10:01:14] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 10:01:14] "GET /static/login.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 10:01:14] "GET /static/CollegeDark.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 10:01:25] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 10:01:35] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 10:07:56] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 10:08:05] "POST /admin HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 10:08:05] "GET /admin/location HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 10:08:38] "GET /admin/location/LH HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 10:08:38] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 10:08:38] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 10:08:38] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 10:08:38] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 10:09:09] "GET /admin/location/LH HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 10:09:09] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 10:09:09] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 10:09:09] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 10:09:09] "GET /static/posts/7c3fe1543abaade1.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 10:09:09] "GET /static/posts/382c0d365a085d3b.jpg HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 10:09:09] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 10:09:13] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 10:09:13] "GET /admin/location HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 10:09:20] "GET /admin/location/LH HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 10:09:20] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 10:09:20] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 10:09:20] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 10:09:20] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 10:10:18] "POST /post/1/resolve HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 10:10:18] "GET /admin/location/LH HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 10:10:18] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 10:10:18] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 10:10:18] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 10:10:18] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 10:10:25] "GET /post/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 11:51:57] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 11:51:57] "GET /admin/location HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 11:51:57] "GET /static/footer.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 11:51:58] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 11:52:02] "GET /admin/location/LH HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 11:52:02] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 11:52:02] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 11:52:02] "GET /static/posts/382c0d365a085d3b.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 11:52:02] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 11:52:02] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 11:52:19] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 11:52:19] "GET /admin/location HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 11:52:19] "GET /static/footer.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 11:52:21] "GET /logout HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 11:52:21] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 11:52:21] "GET /static/login.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 11:52:22] "GET /static/CollegeDark.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 11:52:22] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 11:53:04] "POST /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 11:53:04] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 11:53:48] "GET /posts/create HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 11:54:19] "GET /account HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 11:54:37] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 11:54:37] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 11:55:22] "GET /logout HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 11:55:22] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 11:55:25] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 11:56:10] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 11:56:12] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 11:56:14] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2019 11:56:21] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 536-206-577
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 17:43:14] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 17:43:15] "GET /static/login.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 17:43:15] "GET /static/CollegeDark.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 17:43:15] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 17:44:54] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 17:44:54] "GET /static/login.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 17:44:55] "GET /static/CollegeDark.jpg HTTP/1.1" 304 -
+INFO:werkzeug: * Detected change in '/home/elli0t/projects/cleanKLE/run.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 176-820-650
+INFO:werkzeug: * Running on http://0.0.0.0:9000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 641-499-400
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:25:48] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:25:48] "GET /static/login.css HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/elli0t/projects/cleanKLE/run.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 900-828-462
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:27:52] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:28:01] "POST /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:28:43] "POST /admin HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:28:43] "GET /admin/location HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:28:43] "GET /static/footer.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:28:43] "GET /static/KLE-Tech-logo-inv.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:28:45] "GET /admin/location/MB HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:28:46] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:28:46] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:28:48] "GET /admin/location/MB HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:28:48] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:28:48] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:28:48] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:28:48] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:29:08] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:29:08] "GET /admin/location HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:29:11] "GET /admin/location/LH HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:29:11] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:29:11] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:29:11] "GET /static/posts/382c0d365a085d3b.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:29:11] "GET /static/posts/7c3fe1543abaade1.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:29:11] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:29:33] "GET /about HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:29:37] "GET /works HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:29:39] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:29:39] "GET /admin/location HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:29:41] "GET /admin/location/LH HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:29:41] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:29:41] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:29:41] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:29:41] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:29:43] "GET /post/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:29:44] "GET /static/profile_pics/3a555024dcae85ed.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:29:44] "GET /static/profile_pics/d9917c9e44364ef9.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:29:57] "GET /post/2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:30:06] "GET /works HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:36:42] "GET /post/2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:36:42] "GET /static/footer.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:36:43] "GET /static/posts/382c0d365a085d3b.jpg HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:36:43] "GET /static/profile_pics/3a555024dcae85ed.jpg HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:36:43] "GET /static/KLE-Tech-logo-inv.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:37:19] "GET /post/2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:37:19] "GET /static/footer.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:37:19] "GET /static/posts/382c0d365a085d3b.jpg HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:37:19] "GET /static/profile_pics/3a555024dcae85ed.jpg HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:37:19] "GET /static/KLE-Tech-logo-inv.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:37:20] "GET /post/2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:37:20] "GET /static/footer.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:37:20] "GET /post/2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:37:20] "GET /static/footer.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:37:20] "GET /post/2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:37:20] "GET /static/footer.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:37:20] "GET /static/posts/382c0d365a085d3b.jpg HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:37:20] "GET /static/profile_pics/3a555024dcae85ed.jpg HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:37:20] "GET /static/KLE-Tech-logo-inv.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:37:38] "GET /post/2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:37:38] "GET /static/footer.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:37:38] "GET /static/posts/382c0d365a085d3b.jpg HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:37:38] "GET /static/KLE-Tech-logo-inv.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:37:38] "GET /static/profile_pics/3a555024dcae85ed.jpg HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:37:39] "GET /post/2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:37:39] "GET /static/footer.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:37:39] "GET /post/2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:37:39] "GET /static/footer.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:37:39] "GET /static/posts/382c0d365a085d3b.jpg HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:37:39] "GET /static/profile_pics/3a555024dcae85ed.jpg HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:37:39] "GET /static/KLE-Tech-logo-inv.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:37:46] "GET /post/2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:37:46] "GET /static/footer.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:37:46] "GET /static/posts/382c0d365a085d3b.jpg HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:37:46] "GET /static/profile_pics/3a555024dcae85ed.jpg HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:37:46] "GET /static/KLE-Tech-logo-inv.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:38:07] "GET /post/2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:38:07] "GET /static/footer.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:38:07] "GET /static/posts/382c0d365a085d3b.jpg HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:38:07] "GET /static/profile_pics/3a555024dcae85ed.jpg HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:38:07] "GET /static/KLE-Tech-logo-inv.png HTTP/1.1" 304 -
+INFO:werkzeug: * Detected change in '/home/elli0t/projects/cleanKLE/cleanApp/forms.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 276-818-236
+INFO:werkzeug: * Detected change in '/home/elli0t/projects/cleanKLE/cleanApp/models.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 469-968-034
+INFO:werkzeug: * Detected change in '/home/elli0t/projects/cleanKLE/cleanApp/routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 135-676-202
+INFO:werkzeug: * Detected change in '/home/elli0t/projects/cleanKLE/cleanApp/routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 111-220-993
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:52:50] "GET /post/2 HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:52:50] "GET /post/2?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:52:50] "GET /post/2?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:52:50] "GET /post/2?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:52:50] "GET /post/2?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/elli0t/projects/cleanKLE/cleanApp/routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 321-976-653
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:53:37] "GET /post/2 HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:53:37] "GET /post/2?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:53:37] "GET /post/2?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:53:37] "GET /post/2?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:53:37] "GET /post/2?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:53:37] "GET /post/2 HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:53:37] "GET /post/2?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:53:37] "GET /post/2?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:53:37] "GET /post/2?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:53:38] "GET /post/2?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:53:38] "GET /post/2 HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:53:38] "GET /post/2 HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:53:38] "GET /post/2?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:53:38] "GET /post/2?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:53:38] "GET /post/2?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:53:38] "GET /post/2?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:56:02] "GET /post/2 HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:56:02] "GET /post/2?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:56:02] "GET /post/2?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:56:02] "GET /post/2?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:56:03] "GET /post/2?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:57:07] "GET /post/2 HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:57:07] "GET /post/2?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:57:07] "GET /post/2?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:57:07] "GET /post/2?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:57:07] "GET /post/2?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:57:08] "GET /post/2 HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:57:08] "GET /post/2?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:57:08] "GET /post/2?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:57:08] "GET /post/2?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:57:08] "GET /post/2?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:57:08] "GET /post/2 HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:57:08] "GET /post/2?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:57:08] "GET /post/2?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:57:08] "GET /post/2?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:57:08] "GET /post/2?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:57:18] "GET /post/2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:57:18] "GET /static/footer.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:57:18] "GET /static/posts/382c0d365a085d3b.jpg HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:57:18] "GET /static/KLE-Tech-logo-inv.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:57:18] "GET /static/profile_pics/3a555024dcae85ed.jpg HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:57:28] "GET /post/2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:57:28] "GET /static/footer.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:57:28] "GET /static/posts/382c0d365a085d3b.jpg HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:57:28] "GET /static/profile_pics/3a555024dcae85ed.jpg HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:57:28] "GET /static/KLE-Tech-logo-inv.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:57:29] "GET /post/2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:57:29] "GET /static/footer.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:57:29] "GET /static/profile_pics/3a555024dcae85ed.jpg HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:57:29] "GET /static/KLE-Tech-logo-inv.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 18:57:29] "GET /static/posts/382c0d365a085d3b.jpg HTTP/1.1" 304 -
+INFO:werkzeug: * Detected change in '/home/elli0t/projects/cleanKLE/cleanApp/routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 121-992-212
+INFO:werkzeug: * Detected change in '/home/elli0t/projects/cleanKLE/cleanApp/routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-388-620
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 19:01:55] "GET /post/2 HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 19:01:55] "GET /post/2?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 19:01:55] "GET /post/2?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 19:01:55] "GET /post/2?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 19:01:55] "GET /post/2?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/elli0t/projects/cleanKLE/cleanApp/routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 236-065-095
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 19:06:12] "GET /post/2 HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 19:06:12] "GET /post/2?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 19:06:12] "GET /post/2?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 19:06:12] "GET /post/2?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 19:06:12] "GET /post/2?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 19:09:41] "GET /post/2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 19:09:42] "GET /static/footer.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 19:09:43] "GET /static/posts/382c0d365a085d3b.jpg HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 19:09:43] "GET /static/KLE-Tech-logo-inv.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 19:09:43] "GET /static/profile_pics/3a555024dcae85ed.jpg HTTP/1.1" 304 -
+INFO:werkzeug: * Detected change in '/home/elli0t/projects/cleanKLE/cleanApp/routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 288-120-436
+INFO:werkzeug: * Detected change in '/home/elli0t/projects/cleanKLE/cleanApp/routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 103-148-663
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 19:13:06] "GET /post/2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 19:13:06] "GET /static/footer.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 19:13:07] "GET /static/profile_pics/3a555024dcae85ed.jpg HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 19:13:07] "GET /static/posts/382c0d365a085d3b.jpg HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2019 19:13:07] "GET /static/KLE-Tech-logo-inv.png HTTP/1.1" 304 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 735-437-807
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 09:44:05] "GET / HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 09:44:05] "GET /admin/location HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 09:44:05] "GET /static/footer.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 09:44:06] "GET /static/KLE-Tech-logo-inv.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 09:44:08] "GET /admin/location/LH HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 09:44:08] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 09:44:08] "GET /static/posts/7c3fe1543abaade1.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 09:44:08] "GET /static/posts/382c0d365a085d3b.jpg HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 09:44:08] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 09:44:12] "GET /post/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 09:44:12] "GET /static/profile_pics/d9917c9e44364ef9.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 09:44:12] "GET /static/profile_pics/3a555024dcae85ed.jpg HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 09:44:44] "GET /post/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 09:44:44] "GET /static/footer.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 09:44:44] "GET /static/posts/7c3fe1543abaade1.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 09:44:44] "GET /static/profile_pics/d9917c9e44364ef9.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 09:44:44] "GET /static/profile_pics/3a555024dcae85ed.jpg HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 09:44:44] "GET /static/KLE-Tech-logo-inv.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 09:44:55] "GET /post/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 09:44:55] "GET /static/footer.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 09:44:55] "GET /static/posts/7c3fe1543abaade1.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 09:44:55] "GET /static/profile_pics/d9917c9e44364ef9.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 09:44:55] "GET /static/KLE-Tech-logo-inv.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 09:44:55] "GET /static/profile_pics/3a555024dcae85ed.jpg HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 09:45:08] "GET /post/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 09:45:08] "GET /static/footer.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 09:45:08] "GET /static/profile_pics/3a555024dcae85ed.jpg HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 09:45:08] "GET /static/KLE-Tech-logo-inv.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 09:45:08] "GET /static/profile_pics/d9917c9e44364ef9.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 09:45:08] "GET /static/posts/7c3fe1543abaade1.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 09:45:23] "GET /post/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 09:45:23] "GET /static/footer.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 09:45:23] "GET /static/posts/7c3fe1543abaade1.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 09:45:23] "GET /static/profile_pics/d9917c9e44364ef9.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 09:45:23] "GET /static/profile_pics/3a555024dcae85ed.jpg HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 09:45:23] "GET /static/KLE-Tech-logo-inv.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 09:47:33] "GET /post/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 09:47:33] "GET /static/footer.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 09:47:33] "GET /static/posts/7c3fe1543abaade1.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 09:47:33] "GET /static/profile_pics/d9917c9e44364ef9.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 09:47:33] "GET /static/profile_pics/3a555024dcae85ed.jpg HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 09:47:33] "GET /static/KLE-Tech-logo-inv.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 09:48:06] "GET /post/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 09:48:06] "GET /static/footer.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 09:48:07] "GET /static/profile_pics/3a555024dcae85ed.jpg HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 09:48:07] "GET /static/posts/7c3fe1543abaade1.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 09:48:07] "GET /static/profile_pics/d9917c9e44364ef9.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 09:48:07] "GET /static/KLE-Tech-logo-inv.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 09:57:29] "GET /post/1 HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 09:57:29] "GET /post/1?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 09:57:29] "GET /post/1?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 09:57:29] "GET /post/1?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 09:57:29] "GET /post/1?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 09:57:29] "GET /post/1?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 09:57:33] "GET /admin/location/LH HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 09:57:33] "GET /admin/location/LH?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 09:57:33] "GET /admin/location/LH?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 09:57:33] "GET /admin/location/LH?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 09:57:33] "GET /admin/location/LH?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 09:57:34] "GET /admin/location HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 09:57:34] "GET /admin/location?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 09:57:34] "GET /admin/location?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 09:57:34] "GET /admin/location?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 09:57:34] "GET /admin/location?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 09:57:37] "GET / HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 09:57:37] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 09:57:37] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 09:57:37] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 09:57:37] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 09:57:37] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 09:58:34] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 09:58:34] "GET /static/login.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 09:58:34] "GET /static/CollegeDark.jpg HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:03:25] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:03:33] "POST /admin HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:03:33] "GET /admin/location HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:03:40] "GET /works HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:03:41] "GET /about HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:03:41] "GET /posts/create HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:03:43] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:03:43] "GET /admin/location HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:04:04] "GET /logout HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:04:04] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:04:05] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:04:11] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:04:54] "POST /register HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:04:54] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:05:05] "POST /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:05:05] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:06:49] "GET /works HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:06:52] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:06:52] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:07:58] "GET /posts/create HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:10:18] "POST /posts/create HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:10:19] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:10:19] "GET /static/posts/74c81a941ff5a813.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:10:19] "GET /static/profile_pics/default.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:12:49] "GET /post/1 HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/elli0t/projects/cleanKLE/cleanApp/models.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 131-997-200
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:16:15] "GET /post/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:16:15] "GET /static/footer.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:16:16] "GET /static/posts/74c81a941ff5a813.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:16:16] "GET /static/KLE-Tech-logo-inv.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:16:16] "GET /static/profile_pics/default.jpg HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:16:23] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:16:23] "GET /static/login.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:16:24] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:16:24] "GET /static/CollegeDark.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:16:28] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:16:36] "POST /admin HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:16:36] "GET /admin/location HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:16:37] "GET /static/footer.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:16:37] "GET /static/KLE-Tech-logo-inv.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:16:39] "GET /admin/location/LH HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:16:39] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:16:39] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:16:39] "GET /static/posts/74c81a941ff5a813.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:16:39] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:16:39] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:16:42] "GET /post/1 HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:16:42] "GET /post/1?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:16:42] "GET /post/1?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:16:42] "GET /post/1?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:16:42] "GET /post/1?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:16:42] "GET /post/1?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:16:54] "GET /post/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:16:54] "GET /static/footer.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:16:54] "GET /static/posts/74c81a941ff5a813.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:16:54] "GET /static/profile_pics/default.jpg HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:16:54] "GET /static/KLE-Tech-logo-inv.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:16:57] "GET /post/1 HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:16:57] "GET /post/1?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:16:57] "GET /post/1?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:16:57] "GET /post/1?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:16:58] "GET /post/1?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:16:59] "GET /post/1 HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:16:59] "GET /post/1?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:16:59] "GET /post/1?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:16:59] "GET /post/1?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:16:59] "GET /post/1?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:17:00] "GET /post/1 HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:17:00] "GET /post/1?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:17:00] "GET /post/1?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:17:00] "GET /post/1?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:17:00] "GET /post/1?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:17:00] "GET /post/1 HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:17:00] "GET /post/1?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:17:00] "GET /post/1?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:17:00] "GET /post/1?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:17:00] "GET /post/1 HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:17:00] "GET /post/1?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:17:00] "GET /post/1?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:17:00] "GET /post/1?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:17:00] "GET /post/1?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:17:00] "GET /post/1 HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:17:00] "GET /post/1?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:17:00] "GET /post/1?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:17:00] "GET /post/1?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:17:00] "GET /post/1?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/elli0t/projects/cleanKLE/cleanApp/routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 319-169-443
+INFO:werkzeug: * Detected change in '/home/elli0t/projects/cleanKLE/cleanApp/routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 184-607-492
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:32:14] "GET /post/1 HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:32:14] "GET /post/1?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:32:14] "GET /post/1?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:32:14] "GET /post/1?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:32:14] "GET /post/1?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:32:30] "GET /post/1 HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:32:30] "GET /post/1?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:32:30] "GET /post/1?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:32:30] "GET /post/1?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:32:30] "GET /post/1?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:32:31] "GET /post/1 HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:32:31] "GET /post/1?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:32:31] "GET /post/1?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:32:31] "GET /post/1?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:32:31] "GET /post/1?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:32:32] "GET /post/1 HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:32:32] "GET /post/1?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:32:32] "GET /post/1?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:32:32] "GET /post/1?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:32:32] "GET /post/1?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:32:32] "GET /post/1 HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:32:32] "GET /post/1?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:32:32] "GET /post/1?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:32:32] "GET /post/1?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:32:32] "GET /post/1?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/elli0t/projects/cleanKLE/cleanApp/routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 266-753-633
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:33:34] "GET /post/1 HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:33:34] "GET /post/1?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:33:34] "GET /post/1?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:33:34] "GET /post/1?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:33:34] "GET /post/1?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:33:34] "GET /post/1 HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:33:34] "GET /post/1?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:33:34] "GET /post/1?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:33:34] "GET /post/1?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:33:34] "GET /post/1?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:33:34] "GET /post/1 HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:33:34] "GET /post/1?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:33:34] "GET /post/1?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:33:34] "GET /post/1?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:33:35] "GET /post/1?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:33:35] "GET /post/1 HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:33:35] "GET /post/1?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:33:35] "GET /post/1?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:33:35] "GET /post/1?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:33:35] "GET /post/1 HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:33:35] "GET /post/1?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:33:35] "GET /post/1?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:33:35] "GET /post/1?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:33:35] "GET /post/1?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:33:35] "GET /post/1 HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:33:35] "GET /post/1 HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:33:35] "GET /post/1?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:33:35] "GET /post/1?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:33:35] "GET /post/1?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:33:35] "GET /post/1?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/elli0t/projects/cleanKLE/cleanApp/routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 968-689-309
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:33:54] "GET /post/1 HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:33:55] "GET /post/1?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:33:55] "GET /post/1?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:33:55] "GET /post/1?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:33:55] "GET /post/1?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/elli0t/projects/cleanKLE/cleanApp/routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 225-595-752
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:34:22] "GET /post/1 HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:34:22] "GET /post/1?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:34:22] "GET /post/1?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:34:22] "GET /post/1?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:34:22] "GET /post/1?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:35:13] "GET /post/1 HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:35:13] "GET /post/1?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:35:13] "GET /post/1?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:35:13] "GET /post/1?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:35:13] "GET /post/1?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:35:14] "GET /post/1 HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:35:14] "GET /post/1?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:35:14] "GET /post/1?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:35:14] "GET /post/1?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:35:14] "GET /post/1?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/elli0t/projects/cleanKLE/cleanApp/routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 321-245-008
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:35:19] "GET /post/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:35:19] "GET /static/footer.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:35:20] "GET /static/posts/74c81a941ff5a813.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:35:20] "GET /static/profile_pics/default.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:35:20] "GET /static/KLE-Tech-logo-inv.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:37:22] "GET /post/1 HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:37:22] "GET /post/1?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:37:22] "GET /post/1?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:37:22] "GET /post/1?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:37:22] "GET /post/1?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:39:29] "GET /post/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:39:29] "GET /static/footer.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:39:30] "GET /static/posts/74c81a941ff5a813.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:39:30] "GET /static/profile_pics/default.jpg HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:39:30] "GET /static/KLE-Tech-logo-inv.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:39:57] "GET /post/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:39:57] "GET /static/footer.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:39:57] "GET /static/posts/74c81a941ff5a813.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:39:57] "GET /static/profile_pics/default.jpg HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:39:57] "GET /static/KLE-Tech-logo-inv.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:40:58] "GET /post/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:40:58] "GET /static/footer.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:40:58] "GET /static/profile_pics/default.jpg HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:40:58] "GET /static/posts/74c81a941ff5a813.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:40:58] "GET /static/KLE-Tech-logo-inv.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:42:30] "POST /post/1 HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:42:30] "GET /post/1?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:42:30] "GET /post/1?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:42:30] "GET /post/1?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:42:30] "GET /post/1?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/elli0t/projects/cleanKLE/cleanApp/routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 268-470-274
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:44:40] "POST /post/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:44:40] "GET /static/footer.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:44:41] "GET /static/posts/74c81a941ff5a813.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:44:41] "GET /static/profile_pics/default.jpg HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:44:41] "GET /static/KLE-Tech-logo-inv.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:45:59] "POST /post/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:46:34] "POST /post/1 HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:46:34] "GET /post/1?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:46:34] "GET /post/1?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:46:34] "GET /post/1?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:46:34] "GET /post/1?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/elli0t/projects/cleanKLE/cleanApp/models.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 338-818-387
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:50:02] "POST /post/1 HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:50:02] "GET /post/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:50:02] "GET /static/footer.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:50:03] "GET /static/profile_pics/default.jpg HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:50:03] "GET /static/posts/74c81a941ff5a813.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:50:03] "GET /static/KLE-Tech-logo-inv.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:50:29] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:50:29] "GET /admin/location HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:50:34] "GET /admin/location/LH HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:50:34] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:50:34] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:50:34] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:50:34] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:50:37] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:50:37] "GET /admin/location HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:50:50] "GET /logout HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 10:50:50] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 437-599-936
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 12:05:19] "GET / HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 12:05:19] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 12:05:20] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 12:05:25] "GET /logout HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 12:05:25] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 12:05:35] "POST /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 12:05:35] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 12:05:38] "GET /posts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 12:05:38] "GET /static/footer.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 12:05:38] "GET /static/KLE-Tech-logo-inv.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 12:05:38] "GET /static/posts/74c81a941ff5a813.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 12:05:38] "GET /static/profile_pics/default.jpg HTTP/1.1" 304 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 244-797-509
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 12:46:33] "GET /logout HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 12:46:33] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 12:46:33] "GET /static/login.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 12:46:34] "GET /static/CollegeDark.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 12:46:39] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 12:46:50] "POST /admin HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 12:46:50] "GET /admin/location HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 12:46:50] "GET /static/footer.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 12:46:50] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 12:47:23] "GET /admin/location/LH HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 12:47:23] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 12:47:23] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 12:47:23] "GET /static/posts/74c81a941ff5a813.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 12:47:23] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 12:47:23] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 12:47:26] "GET /admin/location HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 12:47:26] "GET /static/footer.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 12:47:28] "GET /admin/location/LH HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 12:47:28] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 12:47:28] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 12:47:28] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 12:47:28] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 12:47:33] "GET /admin/location/LH HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 12:47:33] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 12:47:33] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 12:59:57] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 12:59:57] "GET /admin/location HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:00:01] "GET /admin/location/LH HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:00:01] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:00:01] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:00:01] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:00:03] "GET /post/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:00:03] "GET /static/footer.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:00:03] "GET /static/profile_pics/default.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:00:26] "POST /post/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:03:07] "POST /post/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:03:07] "GET /static/footer.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:03:08] "GET /static/profile_pics/default.jpg HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:03:08] "GET /static/posts/74c81a941ff5a813.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:03:08] "GET /static/KLE-Tech-logo-inv.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:03:30] "POST /post/1 HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:03:30] "GET /post/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:03:30] "GET /static/footer.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:05:23] "GET /post/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:05:23] "GET /static/footer.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:05:23] "GET /static/profile_pics/default.jpg HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:05:23] "GET /static/posts/74c81a941ff5a813.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:05:23] "GET /static/KLE-Tech-logo-inv.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:05:30] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:05:30] "GET /admin/location HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:05:33] "GET /admin/location/LH HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:05:33] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:05:33] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:05:33] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:05:33] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 157-269-046
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:12:41] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:12:41] "GET /admin/location HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:13:23] "GET /admin/location/LH HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:13:23] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:13:24] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:15:31] "GET /admin/location/LH HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:15:31] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:15:31] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:15:31] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:15:31] "GET /static/posts/74c81a941ff5a813.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:15:32] "GET /admin/location/LH HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:15:32] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:15:32] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:15:32] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:15:32] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:15:32] "GET /static/posts/74c81a941ff5a813.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:15:32] "GET /admin/location/LH HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:15:32] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:15:32] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:15:32] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:15:32] "GET /static/posts/74c81a941ff5a813.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:15:32] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:15:33] "GET /admin/location/LH HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:15:34] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:15:34] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:15:34] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:15:34] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:15:34] "GET /static/posts/74c81a941ff5a813.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:15:34] "GET /admin/location/LH HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:15:34] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:15:34] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:15:34] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:15:34] "GET /static/posts/74c81a941ff5a813.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:15:34] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:16:03] "GET /works HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:16:08] "GET /about HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:16:09] "GET /posts/create HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:16:11] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:16:11] "GET /admin/location HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:16:13] "GET /admin/location/LH HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:16:13] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:16:13] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:16:13] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:16:13] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:17:15] "GET /admin/location/LH HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:17:15] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:17:15] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:17:15] "GET /admin/location/LH HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:17:15] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:17:15] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:17:15] "GET /admin/location/LH HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:17:15] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:17:15] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:17:15] "GET /admin/location/LH HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:17:15] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:17:15] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:17:16] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:17:16] "GET /static/posts/74c81a941ff5a813.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:17:16] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:17:31] "GET /admin/location/ HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:17:35] "GET /admin/ HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:17:39] "GET / HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:17:39] "GET /admin/location HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:17:46] "GET /admin/location/LH HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:17:46] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:17:46] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:17:46] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:17:46] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:17:50] "GET /post/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:17:51] "GET /static/profile_pics/default.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:18:07] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:18:07] "GET /admin/location HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:18:32] "GET /admin/location/LH HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:18:32] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:18:32] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:18:32] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:18:32] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:18:58] "GET /admin/location/LH HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:18:58] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:18:58] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:18:58] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:18:58] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:18:58] "GET /static/posts/74c81a941ff5a813.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:20:04] "GET /works HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:20:29] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:20:29] "GET /admin/location HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:20:33] "GET /admin/location/LH HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:20:33] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:20:33] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:20:51] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:21:49] "GET /admin/ HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:22:02] "GET /admin/static/ HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:24:05] "GET /admin/location/LH HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:24:05] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:24:06] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:24:06] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:24:06] "GET /static/posts/74c81a941ff5a813.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:24:14] "GET /works HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:24:47] "GET /works HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:24:47] "GET /static/footer.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:24:47] "GET /static/KLE-Tech-logo-inv.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:25:07] "GET /works HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:25:07] "GET /static/footer.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:25:07] "GET /static/KLE-Tech-logo-inv.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:25:08] "GET /works HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:25:08] "GET /static/footer.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:25:08] "GET /static/KLE-Tech-logo-inv.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:25:17] "GET /works HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:25:18] "GET /static/footer.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:25:18] "GET /static/KLE-Tech-logo-inv.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:25:19] "GET /works HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:25:19] "GET /static/footer.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:25:19] "GET /static/KLE-Tech-logo-inv.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:25:19] "GET /works HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:25:19] "GET /static/footer.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:25:19] "GET /static/KLE-Tech-logo-inv.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:25:40] "GET /works HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:25:40] "GET /static/footer.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:25:41] "GET /static/KLE-Tech-logo-inv.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:25:52] "GET /works HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:25:52] "GET /static/footer.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:25:53] "GET /static/KLE-Tech-logo-inv.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:26:14] "GET /works HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:26:14] "GET /static/footer.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:26:14] "GET /static/KLE-Tech-logo-inv.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:27:07] "GET /works HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:27:07] "GET /static/footer.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:27:07] "GET /static/KLE-Tech-logo-inv.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:27:11] "GET /about HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:27:57] "GET /about HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:27:57] "GET /static/footer.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:27:58] "GET /static/KLE-Tech-logo-inv.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:28:02] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:28:02] "GET /admin/location HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:28:05] "GET /admin/location/LH HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:28:05] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:28:05] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:28:05] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:28:05] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:28:15] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:28:16] "GET /admin/location HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:28:17] "GET /admin/location/MB HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:28:17] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:28:17] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:28:17] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:28:37] "GET /admin/location/MB HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:28:37] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:28:37] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:28:37] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:28:37] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:28:46] "GET /admin/location/MB HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:28:46] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:28:46] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:28:46] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:28:46] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:29:10] "GET /admin/location/MB HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:29:10] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:29:10] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:29:10] "GET /admin/location/MB HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:29:10] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:29:10] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:29:10] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:29:10] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:29:12] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:29:12] "GET /admin/location HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:29:44] "GET /admin/location HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:29:44] "GET /static/footer.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:29:44] "GET /static/KLE-Tech-logo-inv.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:29:49] "GET /admin/location/EC HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:29:49] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:29:49] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:29:49] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:29:49] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:30:05] "GET /admin/location/EC HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:30:05] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:30:05] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:30:05] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:30:05] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:30:09] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:30:09] "GET /admin/location HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:30:14] "GET /admin/location/LH HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:30:14] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:30:14] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:30:14] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:30:14] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:30:20] "GET /post/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:30:46] "GET /admin/location/LH HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:30:46] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:30:46] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:30:47] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:30:47] "GET /static/posts/74c81a941ff5a813.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:30:47] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:30:49] "GET /works HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:30:52] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:30:52] "GET /admin/location HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:30:54] "GET /admin/location/LH HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:30:54] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:30:54] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:30:54] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:30:54] "GET /admin/static/KLE-Tech-logo-inv.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:32:20] "GET /admin/location/LH HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:32:20] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:32:20] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:32:21] "GET /static/KLE-Tech-logo-inv.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:32:21] "GET /static/posts/74c81a941ff5a813.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:32:56] "GET /admin/location/LH HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:32:56] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:32:57] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:32:57] "GET /static/posts/74c81a941ff5a813.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:32:57] "GET /static/KLE-Tech-logo-inv.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:33:02] "GET /works HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:33:07] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:33:07] "GET /admin/location HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:33:08] "GET /admin/location/LH HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:33:09] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jul/2019 13:33:09] "GET /admin/static/footer.css HTTP/1.1" 404 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 289-943-503
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 247-358-798
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2019 12:41:25] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2019 12:41:25] "GET /static/login.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2019 12:41:25] "GET /static/footer.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2019 12:41:26] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2019 12:41:26] "GET /static/CollegeDark.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2019 12:41:33] "POST / HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2019 12:41:33] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2019 12:41:33] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2019 12:41:33] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2019 12:41:33] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2019 12:41:33] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 995-092-022
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2019 12:45:52] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2019 12:45:52] "GET /static/login.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2019 12:45:52] "GET /static/footer.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2019 12:45:55] "GET /static/CollegeDark.jpg HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2019 12:46:07] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2019 12:46:22] "GET /login HTTP/1.1" 200 -
